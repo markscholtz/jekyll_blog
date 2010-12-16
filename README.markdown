@@ -9,4 +9,4 @@ I actually get some content up it would have been worth it.
 
 ## Credits ##
 
-[Jekyll](github.com/mojombo/jekyll) for static html rendering of [markdown](daringfireball.net/projects/markdown).
+[Jekyll](www.github.com/mojombo/jekyll) for static html rendering of [markdown](www.daringfireball.net/projects/markdown).
