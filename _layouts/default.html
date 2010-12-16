@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <div id="site">
+      {{ content }}
+    </div>
+    <div>
+      <ul id="posts">
+        {% for post in site.posts %}
+          <li>{{ post.title }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
