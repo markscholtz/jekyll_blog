@@ -1,0 +1,97 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.left_border {
+  float: left;
+  width: 30%;
+}
+
+.right_border {
+  float: left;
+  width: 30%;
+}
+
+.left_inner_border {
+  float: right;
+}
+
+.right_inner_border {
+  float: left;
+}
+
+.green {
+  background-color: #66FF99;
+  width: 10%;
+  height: 100%;
+  max-width: 27px;
+}
+
+.purple {
+  width: 10%;
+  height: 100%;
+  background-color: #9966CC;
+  max-width: 30px;
+}
+
+.blue_outer {
+  width: 80%;
+}
+
+.blue_inner {
+  height: 100%;
+  background-color: #33CCCC;
+  border-left: 2px solid #666666;
+  border-right: 2px solid #666666;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.white {
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+
+.main {
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  height: 10%;
+  min-height: 50px;
+}
+
+article {
+  text-align: center;
+  height: 80%;
+}
+
+footer {
+  text-align: center;
+  height: 10%;
+  min-height: 50px;
+}
