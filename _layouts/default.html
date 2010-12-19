@@ -1,17 +1,37 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/default.css" type="text/css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div id="site">
-      {{ content }}
+    <div class="left_border">
+      <div class="green left_inner_border"></div>
+      <div class="purple left_inner_border"></div>
+      <div class="blue_outer left_inner_border">
+        <div class="blue_inner"></div>
+      </div>
     </div>
-    <div>
-      <ul id="posts">
-        {% for post in site.posts %}
-          <li>{{ post.title }}</li>
-        {% endfor %}
-      </ul>
+    <div class="main">
+      <header>
+        blah
+      </header>
+      <article>
+        <ul id="posts">
+          {% for post in site.posts %}
+            <li>{{ post.title }}</li>
+          {% endfor %}
+        </ul>
+      </article>
+      <footer>
+        blah
+      </footer>
+    </div>
+    <div class="right_border">
+      <div class="green right_inner_border"></div>
+      <div class="purple right_inner_border"></div>
+      <div class="blue_outer right_inner_border">
+        <div class="blue_inner"></div>
+      </div>
     </div>
   </body>
 </html>
