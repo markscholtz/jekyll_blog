@@ -4,6 +4,9 @@
     <link rel="stylesheet" href="/css/default.css" type="text/css" media="screen" charset="utf-8">
   </head>
   <body>
+    <header class="main">
+      <h1>Main Header</h1>
+    </header>
     <div class="left_border">
       <div class="green left_inner_border"></div>
       <div class="purple left_inner_border"></div>
@@ -11,9 +14,9 @@
         <div class="blue_inner"></div>
       </div>
     </div>
-    <div class="main">
-      <header>
-        blah
+    <div class="primary_content">
+      <header class="article_header">
+        <h1>Header goes here!</h1>
       </header>
       <article>
         <ul id="posts">
@@ -22,8 +25,8 @@
           {% endfor %}
         </ul>
       </article>
-      <footer>
-        blah
+      <footer class="article_footer">
+        <h1>And footer goes here!</h1>
       </footer>
     </div>
     <div class="right_border">
@@ -33,5 +36,8 @@
         <div class="blue_inner"></div>
       </div>
     </div>
+    <footer class="main">
+      <p>Main footer</p>
+    </footer>
   </body>
 </html>

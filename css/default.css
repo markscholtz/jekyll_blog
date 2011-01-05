@@ -21,6 +21,28 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 ol, ul {
   list-style: none;
 }
+/* RESET */
+
+/* html5 styling */
+header, nav, section, aside, footer, article {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+/* html5 styling */
+
+/* main */
+html, body {
+  height: 100%;
+}
+
+header.main {
+  background-color: #666666
+}
+
+footer.main {
+  background-color: #666666
+}
 
 .left_border {
   float: left;
@@ -73,16 +95,18 @@ ol, ul {
   height: 100%;
 }
 
-.main {
+.primary_content {
   float: left;
   width: 40%;
   height: 100%;
 }
+/* main */
 
-header {
+/* article */
+header.article_header {
   text-align: center;
   height: 10%;
-  min-height: 50px;
+  /*min-height: 50px;*/
 }
 
 article {
@@ -90,8 +114,9 @@ article {
   height: 80%;
 }
 
-footer {
+footer.article_footer {
   text-align: center;
   height: 10%;
-  min-height: 50px;
+  /*min-height: 50px;*/
 }
+/* article */
