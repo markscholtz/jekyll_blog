@@ -1,4 +1,4 @@
-# www.markscholtz.com #
+# [markscholtz.com](http://markscholtz.com) #
 
 ## About ##
 
