@@ -31,27 +31,47 @@ header, nav, section, aside, footer, article {
 }
 /* html5 styling */
 
-/* main */
 html, body {
   height: 100%;
 }
 
-header.main {
-  background-color: #666666
+header#site_header {
+  background-color: #666666;
+  height: 10%;
 }
 
-footer.main {
-  background-color: #666666
+header#site_header h1 {
+  color: white;
+  font-size: 36px;
+  padding-top: 8px;
+  text-align: center;
+}
+
+footer#site_footer {
+  height: 10%;
+  background-color: #666666;
+  text-align: center;
+}
+
+footer#site_footer p {
+  color: white;
+  padding-top: 8px;
+}
+
+div#main_site_content {
+  height: 80%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .left_border {
   float: left;
-  width: 30%;
+  width: 20%;
 }
 
 .right_border {
   float: left;
-  width: 30%;
+  width: 20%;
 }
 
 .left_inner_border {
@@ -97,10 +117,10 @@ footer.main {
 
 .primary_content {
   float: left;
-  width: 40%;
+  width: 60%;
+  max-width: 960px;
   height: 100%;
 }
-/* main */
 
 /* article */
 header.article_header {
