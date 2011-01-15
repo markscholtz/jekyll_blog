@@ -2,39 +2,47 @@
   <head>
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/css/default.css" type="text/css" media="screen" charset="utf-8">
+    <!--[if !IE 7]>
+      <style type="text/css">
+        #wrap {display:table;height:100%}
+      </style>
+    <![endif]-->
   </head>
   <body>
-    <header id="site_header">
-      <h1>markscholtz.com</h1>
-    </header>
-    <div id="main_site_content">
-      <div class="left_border">
-        <div class="green left_inner_border"></div>
-        <div class="purple left_inner_border"></div>
-        <div class="blue_outer left_inner_border">
-          <div class="blue_inner"></div>
+    <div id="wrap">
+      <header id="site_header">
+        <h1>markscholtz.com</h1>
+      </header>
+      <div id="main_site_content">
+        <div class="left_border fix_height">
+          <div class="green left_inner_border fix_height"></div>
+          <div class="purple left_inner_border fix_height"></div>
+          <div class="blue_outer left_inner_border fix_height">
+            <div class="blue_inner"></div>
+          </div>
         </div>
-      </div>
-      <div class="primary_content">
-        <header class="article_header">
-          <h1>Header goes here!</h1>
-        </header>
-        <article>
-          <ul id="posts">
-            {% for post in site.posts %}
-              <li>{{ post.title }}</li>
-            {% endfor %}
-          </ul>
-        </article>
-        <footer class="article_footer">
-          <h1>And footer goes here!</h1>
-        </footer>
-      </div>
-      <div class="right_border">
-        <div class="green right_inner_border"></div>
-        <div class="purple right_inner_border"></div>
-        <div class="blue_outer right_inner_border">
-          <div class="blue_inner"></div>
+        <div class="primary_content">
+          <header class="article_header">
+            <h1>Header goes here!</h1>
+          </header>
+          <article>
+            <ul id="posts">
+              {% for post in site.posts %}
+                <li>{{ post.title }}</li>
+                <div>{{ post.content }}</div>
+              {% endfor %}
+            </ul>
+          </article>
+          <footer class="article_footer">
+            <h1>And footer goes here!</h1>
+          </footer>
+        </div>
+        <div class="right_border fix_height">
+          <div class="green right_inner_border fix_height"></div>
+          <div class="purple right_inner_border fix_height"></div>
+          <div class="blue_outer right_inner_border fix_height">
+            <div class="blue_inner"></div>
+          </div>
         </div>
       </div>
     </div>
