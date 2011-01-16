@@ -11,38 +11,19 @@
   <body>
     <div id="wrap">
       <header id="site_header">
-        <h1>markscholtz.com</h1>
+        <a href=""><h1>markscholtz.com</h1></a>
       </header>
       <div id="main_site_content">
-        <div class="left_border fix_height">
-          <div class="green left_inner_border fix_height"></div>
-          <div class="purple left_inner_border fix_height"></div>
-          <div class="blue_outer left_inner_border fix_height">
-            <div class="blue_inner"></div>
-          </div>
-        </div>
         <div class="primary_content">
-          <header class="article_header">
-            <h1>Header goes here!</h1>
-          </header>
-          <article>
-            <ul id="posts">
-              {% for post in site.posts %}
-                <li>{{ post.title }}</li>
-                <div>{{ post.content }}</div>
-              {% endfor %}
-            </ul>
-          </article>
-          <footer class="article_footer">
-            <h1>And footer goes here!</h1>
-          </footer>
-        </div>
-        <div class="right_border fix_height">
-          <div class="green right_inner_border fix_height"></div>
-          <div class="purple right_inner_border fix_height"></div>
-          <div class="blue_outer right_inner_border fix_height">
-            <div class="blue_inner"></div>
-          </div>
+          {% for post in site.posts %}
+            <header class="article_header">
+            <a href=""><h1>{{ post.title }}</h1></a>
+              <span id="post_date">{{ post.date | date : "%A %d %B %Y" }}</span>
+            </header>
+            <article>
+              {{ post.content }}
+            </article>
+          {% endfor %}
         </div>
       </div>
     </div>
