@@ -70,7 +70,16 @@ header#site_header a {
 header#site_header h1 {
   color: white;
   font-size: 36px;
-  padding-left: 125px;
+  padding-left: 130px;
+}
+
+header#site_header span#mark_span {
+  color: #33CCCC;
+  padding-right: 2px;
+}
+
+header#site_header span#period_span {
+  color: #33CCCC;
 }
 
 footer#site_footer {
