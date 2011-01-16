@@ -2,7 +2,7 @@
 layout: post
 title: Another Post
 ---
-<h2>Another paragraph for another post</h2>
+<p>Another paragraph for another post</p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium, sapien
 quis blandit interdum, turpis velit ultrices tellus, eu tristique mi libero ac
