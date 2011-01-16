@@ -104,6 +104,33 @@ div#main_site_content {
 }
 
 /* Article */
+article {
+  padding: 10px 0 5px 0;
+  text-align: left;
+}
+
+article a {
+  text-decoration: none;
+}
+
+article h1 {
+  font-size: 1.5em;
+}
+
+article h2 {
+  font-size: 1.2em;
+}
+
+footer.article_footer {
+  font: bold;
+  padding-bottom: 20px;
+  text-align: right
+}
+
+footer.article_footer h2 {
+  font-size: 1.5em;
+}
+
 header.article_header {
   border-bottom: 3px solid #33CCCC;
   height: 3em;
@@ -123,20 +150,5 @@ header.article_header h1 {
 header.article_header span {
   float: right;
   padding-top: 10px;
-}
-
-article {
-  padding: 5px 0;
-  text-align: left;
-}
-
-footer.article_footer {
-  font: bold;
-  padding-bottom: 20px;
-  text-align: right
-}
-
-footer.article_footer h2 {
-  font-size: 1.5em;
 }
 /* Article */
