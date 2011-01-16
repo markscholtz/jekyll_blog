@@ -35,6 +35,10 @@ html, body {
   height: 100%;
 }
 
+body {
+  font: 100%/1.5 "Helvetica Neue", Helvetica, Arial;
+}
+
 /*Opera Fix*/
 body:before {
 	content: "";
@@ -44,28 +48,38 @@ body:before {
 	margin-top: -32767px;/
 }
 
+p {
+  padding: 10px 0;
+}
+
 #wrap {
   min-height: 100%;
 }
 
 header#site_header {
   background-color: #666666;
+  border-bottom: 3px solid #33CCCC;
   height: 60px;
+  padding: 20px 0;
+}
+
+header#site_header a {
+  text-decoration: none;
 }
 
 header#site_header h1 {
   color: white;
   font-size: 36px;
-  padding-top: 8px;
-  text-align: center;
+  padding-left: 125px;
 }
 
 footer#site_footer {
-  position: relative;
-  margin-top: -100px;
+  background-color: #666666;
+  border-top: 3px solid #33CCCC;
   clear: both;
   height: 100px;
-  background-color: #666666;
+  margin-top: -100px;
+  position: relative;
   text-align: center;
 }
 
@@ -82,84 +96,47 @@ div#main_site_content {
   margin: 0 auto;
 }
 
-.left_border {
-  float: left;
-  width: 20%;
-}
-
-.fix_height {
-  height: 100%;
-  margin: -80px 0;
-}
-
-.right_border {
-  float: left;
-  width: 20%;
-}
-
-.left_inner_border {
-  float: right;
-}
-
-.right_inner_border {
-  float: left;
-}
-
-.green {
-  background-color: #66FF99;
-  width: 10%;
-  /*height: 100%;*/
-  max-width: 27px;
-}
-
-.purple {
-  width: 10%;
-  /*height: 100%;*/
-  background-color: #9966CC;
-  max-width: 30px;
-}
-
-.blue_outer {
-  width: 80%;
-}
-
-.blue_inner {
-  height: 100%;
-  background-color: #33CCCC;
-  border-left: 2px solid #666666;
-  border-right: 2px solid #666666;
-  margin-left: 30%;
-  margin-right: 30%;
-}
-
-.white {
-  float: left;
-  width: 40%;
-  /*height: 100%;*/
-}
-
 .primary_content {
   float: left;
-  width: 60%;
   max-width: 960px;
-  /*height: 100%;*/
+  padding: 20px 0;
+  width: 60%;
 }
 
-/* article */
+/* Article */
 header.article_header {
-  text-align: center;
-  height: 10%;
-  /*min-height: 50px;*/
+  border-bottom: 3px solid #33CCCC;
+  height: 3em;
+}
+
+header.article_header a {
+  color: black;
+  text-decoration: none;
+}
+
+header.article_header h1 {
+  float: left;
+  font: bold;
+  font-size: 2em;
+}
+
+header.article_header span {
+  float: right;
+  padding-top: 10px;
 }
 
 article {
-  text-align: center;
-  /*height: 80%;*/
+  padding: 5px 0;
+  text-align: left;
 }
 
 footer.article_footer {
-  text-align: center;
-  /*height: 10%;*/
-  /*min-height: 50px;*/
+  font: bold;
+  padding-bottom: 20px;
+  text-align: right
 }
-/* article */
+
+footer.article_footer h2 {
+  font-size: 1.5em;
+}
+/* Article */
