@@ -108,7 +108,7 @@ div#main_site_content {
 .primary_content {
   float: left;
   max-width: 960px;
-  padding: 20px 0;
+  padding: 20px 0 20px 20px;
   width: 60%;
 }
 
