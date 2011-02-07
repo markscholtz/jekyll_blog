@@ -42,7 +42,7 @@ has resulted in a blog that is followed by many at
 [zeldman.com](http://www.zeldman.com). I personally found that insight into how
 he created his blog inspirational, however anecdotal it might be.
 
-## How agile fits in ##
+## A pat on the back for agile ##
 As a disclaimer, it is obvious that I can't lay credit to coming up with this
 insight on my own (it is not particularly original). However, the idea didn't
 materialise from nowhere. I would like to attribute my awareness of this issue
@@ -53,8 +53,10 @@ Consulting](http://www.unboxedconsulting.com). I was aware of agile theory
 before Unboxed, even seeking to adopt some of its practices. However, this was
 more a result of frustration than an awareness of a better way to do things.
 
-With a little hindsight, all these thoughts currently flitting about that I'm
-trying to express above could be encapsulated by the concept of agile. Agile is
-a methodology that needs to be embraced fully to truly be effective, however,
-can still be put to good effect iteratively. I think in almost all cases,
-executing on an idea is more important than the idea itself. 
+With a little hindsight I can see that the thoughts currently flitting about
+that I'm trying to express above have been set in motion by my recent
+introduction to agile. Agile is a methodology that embraces iterative
+improvements, which has been inspirational to see in action. It has been hugely
+motivational to see this play out in the work environment and has helped me to
+embrace the concept that executing on an idea is more important than the idea
+itself. 
