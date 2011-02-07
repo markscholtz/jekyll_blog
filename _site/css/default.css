@@ -70,7 +70,7 @@ header#site_header a {
 header#site_header h1 {
   color: white;
   font-size: 36px;
-  padding-left: 130px;
+  padding-left: 9%;
 }
 
 header#site_header span#mark_span {
@@ -108,13 +108,13 @@ div#main_site_content {
 .primary_content {
   float: left;
   max-width: 960px;
-  padding: 20px 0;
+  padding: 20px 0 20px 20px;
   width: 60%;
 }
 
 /* Article */
 article {
-  padding: 10px 0 5px 0;
+  padding: 10px 0 20px 0;
   text-align: left;
 }
 
@@ -127,7 +127,10 @@ article h1 {
 }
 
 article h2 {
-  font-size: 1.2em;
+  color: #666666;
+  font-size: 1.5em;
+  padding-left: 5px;
+  padding-top: 15px;
 }
 
 footer.article_footer {
