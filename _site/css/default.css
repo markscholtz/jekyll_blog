@@ -54,6 +54,7 @@ p {
 
 #wrap {
   min-height: 100%;
+  width: 100%;
 }
 
 header#site_header {
