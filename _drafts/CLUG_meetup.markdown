@@ -34,64 +34,79 @@ both given the two communities diverging ideologies. During his talk there
 are a few joking warnings that the chosen content is not meant to entice a
 flame war (although I'm hoping to some degree it does).
 
-It seems that a large part of the concern lies with issues with the
-developer environment offered by each platform becoming more divergent and
-harder to maintain. The contents of the talk so far seem to parallel other
-conversations of the moment involving iOS and Android, or further back,
-Apple and Windows. The tone of the conversation paints a seemingly bleak
-future for Linux and the user experience it offers to the end user, not to
-mention the difficulties facing developers and other contributors looking to
-build on the good work of others.
+It seems that Phil Bull's anxiety can largely be attributed to his concern
+for developers and the splintered environment being offered to them as GNOME
+and Ubuntu continue to diverge. Phil is a documentation contributor for both
+projects. This gives him a unique perspective on just how fractured the
+communities are becoming and how hard it is going to be for developers to
+maintain applications that work on both platforms.
+
+The tone of the conversation paints a seemingly bleak future for Linux and
+the user experience it offers to the end user, not to mention the
+difficulties facing developers and other contributors looking to build on
+the good work of others.
 
 It's facinating to see that the open source world is plagued by similar
-issues to those found in the commercial world. It's not all long hair,
-daisies and tie-died attire.
+issues to those found in the commercial equivalent. It's not all long hair,
+daisies and tie-died attire; there are some extremely heated battles raging
+on.
 
-Phil's talk ends with a well deserved round of applause. He seems like a
-really nice guy who is extremely passionate about what he does (in his spare
-time mind you) and is extremely concerned about the well being of all
-parties involved in this latest open source conflict.
+Phil's talk ends with a well deserved round of applause. He comes across as
+an amicable person who is extremely passionate about what he does. He has a
+genuine concern about the well being of all parties involved in this latest
+open source conflict.
 
-It's question time and Phil is posed some challenging questions, the most
-interesting of which is which road will he go down considering he made it
-clear that he can't take both. His decision - GNOME. Sorry Canonical, but
-you seem to have lost a good man due to what sounds like a spiteful
-insistance to split the efforts of the community.
+It's time to grill the guest speaker and Phil is posed some challenging
+questions. Of most interest to me is which path will he choose considering
+he made it clear that he can't work on both projects. His decision - GNOME.
+Sorry Canonical, but you seem to have lost a good man due to what sounds
+like a spiteful insistence to split the efforts of the community.
 
 Phil's explanation of Canonical's reasons to do what they did is questioned.
-Some in the crowd are unsatisfied that teh stated reasons are all that
+Some in the crowd are unsatisfied that the stated reasons are all that
 explain their seemingly aggressive move.
 
-It is at this point that things really take a turn to the interesting. The
-man in the Darth Vader masks pipes up before Phil has a chance to answer,
-quiping that he might be more able to provide satisfactory answers. It's at
-this point that the Darth Vader mask is removed to reveal none other than
-Mark Shuttleworth! I could not have chosen a better CLUG meeting to attend
-if I'd tried. Or perhaps this is just a day in the life of a CLUG member,
-because everyone is trying to look very unimpressed.
+It is at this point that things really become interesting. The man in the
+Darth Vader masks pipes up before Phil has a chance to answer, quipping that
+he might be more able to provide satisfactory answers. The Darth Vader mask
+is removed to reveal none other than Mark Shuttleworth! My timing in
+attending CLUG could not have been better. Or perhaps this is just
+a day in the life of a CLUG member, because everyone is trying to look very
+unimpressed.
 
 I should have clicked that something was strange about our Vader. The fancy
 shirt, expensive watch and shiny cufflinks (along with the olive
 complexsion) should have been a complete giveaway considering the topic of
 discussion. The mask now makes sense. Not wanting to sway the direction of
 Phil's talk with his presence, but still wanting to hear the thoughts of the
-community the mask was donned. Writing that line triggered a thought in my
-head that Shuttleworth's presence is almost superhero like. Here is a man
-who I feel operates on another level to the rest of the group, yet is deeply
-empathising with it's members who I feel represent Shuttleworth's roots. He
-clearly is concerned about the situation and wants to allay the fears of the
-community. He seems torn in his position as a huge influencer in the
-direction of open source, yet still is someone who was made thanks to his
-grass roots in the movement.
+community, the mask was donned. Shuttleworth's presence is almost superhero
+like.
 
+Despite the heroic manner in which he appeared, people are not letting
+Shuttleworth off lightly. He is being posed some very challenging questions
+indeed, but does not miss a beat in answering any of them. The impression I
+get from his answers is that they are all personal and not just a
+representation of his companies position.
 
+Here is a man who I feel operates on another level to the rest of the group,
+yet is deeply empathising with it's members who represent Shuttleworth's
+roots. He clearly is concerned about the situation and wants to allay the
+fears of the community. He seems torn in his position as a huge influencer
+in the direction of open source, yet still is someone who was made thanks to
+his grass roots in the movement.
 
+He is questioned on the legal implications of the software licences that
+Canonical employs, which seem to deprive contributors of their write to own
+the intellectual property created by their contributions; his opinion on the
+split in the community and why it came about; Canonicals apparent lack of
+giving back to the community they are only too happy to take from, and many
+others.
 
-
-
-People are not letting shuttleworth off easily. Posing some very challenging
-questions including why not being happy to give away their ip to a
-commercial entity such as canonical.
-
-What an amazingly intelligent and passionate bunch of people who are
-involved in opensource.
+As the debate rages I reflect on how incredibly intelligent and passionate
+this room of people is. Here I am, having fumbled my way into a lecture
+theater at the tip of Africa. The room consists of one of the most
+influential people in open source at the moment, battling it out against his
+equally bright and empassioned grassroots contemparies. Although there are
+conflicting opinions and seemingly unresolvable arguments, I feel safe in
+the knowledge that open source can only become stronger with people of this
+calibre involved in its creation and direction.
