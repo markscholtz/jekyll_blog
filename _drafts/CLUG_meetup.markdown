@@ -14,7 +14,7 @@ signal (albeit without applying the death grip). This, in comparison to my
 3GS's zero bars, down in the cozy recess of the Chemical Engineering
 Building's Seminar Room at UCT is quite impressive.
 
-We are back on topic and the evening ahead is being discussed. Some of the
+OK, back on topic and the evening ahead is being discussed. Some of the
 group are heading out after the talk for food and beer to carry on the
 conversation (which has yet to start). An attendee rocks up in a Darth Vader
 mask. I begin to wonder to myself if this is the modus operandi of choice
@@ -23,8 +23,8 @@ moment starts to sink in. It is at this point that I'm glad to have
 discovered a group such as this. I feel quite at home.
 
 It's quite enjoyable to hunker down here in the back tapping away quietly on
-my phone trying to document the moment. I am not feeling to sociable and
-that doesn't appear to be an issue at all.
+my phone trying to document the event. Being in a not too sociable mood this
+evening doesn't appear to be an issue at all.
 
 The talk begins and Phil Bull introduces himself. He is an astrophysics PhD
 student from the University of Cambridge. The talk is fascinating and
@@ -46,7 +46,7 @@ the user experience it offers to the end user, not to mention the
 difficulties facing developers and other contributors looking to build on
 the good work of others.
 
-It's facinating to see that the open source world is plagued by similar
+It's fascinating to see that the open source world is plagued by similar
 issues to those found in the commercial equivalent. It's not all long hair,
 daisies and tie-died attire; there are some extremely heated battles raging
 on.
@@ -70,14 +70,14 @@ It is at this point that things really become interesting. The man in the
 Darth Vader masks pipes up before Phil has a chance to answer, quipping that
 he might be more able to provide satisfactory answers. The Darth Vader mask
 is removed to reveal none other than Mark Shuttleworth! My timing in
-attending CLUG could not have been better. Or perhaps this is just
-a day in the life of a CLUG member, because everyone is trying to look very
+attending CLUG could not have been better. Or perhaps this is just a day in
+the life of a CLUG member, because everyone is trying to look suitably
 unimpressed.
 
 I should have clicked that something was strange about our Vader. The fancy
-shirt, expensive watch and shiny cufflinks (along with the olive
-complexsion) should have been a complete giveaway considering the topic of
-discussion. The mask now makes sense. Not wanting to sway the direction of
+shirt, expensive watch and shiny cuff links (along with the olive
+complexion) should have been a complete giveaway considering the topic of
+discussion. The mask makes sense now. Not wanting to sway the direction of
 Phil's talk with his presence, but still wanting to hear the thoughts of the
 community, the mask was donned. Shuttleworth's presence is almost superhero
 like.
@@ -88,25 +88,28 @@ indeed, but does not miss a beat in answering any of them. The impression I
 get from his answers is that they are all personal and not just a
 representation of his companies position.
 
-Here is a man who I feel operates on another level to the rest of the group,
-yet is deeply empathising with it's members who represent Shuttleworth's
-roots. He clearly is concerned about the situation and wants to allay the
-fears of the community. He seems torn in his position as a huge influencer
-in the direction of open source, yet still is someone who was made thanks to
-his grass roots in the movement.
+He is questioned on many diverse topics: the legal implications of the
+software licences that Canonical employs (which seem to deprive contributors
+of their write to own the intellectual property created by their
+contributions); his opinion on the split in the community and why it came
+about; Canonicals apparent lack of giving back to the community they are
+only too happy to take from; and many others.
 
-He is questioned on the legal implications of the software licences that
-Canonical employs, which seem to deprive contributors of their write to own
-the intellectual property created by their contributions; his opinion on the
-split in the community and why it came about; Canonicals apparent lack of
-giving back to the community they are only too happy to take from, and many
-others.
+As I look upon the conversation as a completely neutral observer I notice
+the dichotomy that exists between Shuttleworth and his contemporaries. The
+personalities in the room could not be more polar in nature. Shuttleworth is
+a powerhouse, full of confidence and conviction in what he is doing.  His
+peers are equally impassioned and intelligent, but Shuttleworth is
+domineering. Not in a bad way. He just oozes confidence and belief in his
+actions. He definitely appears to be fighting an underlying conflict. He is
+trying to resolve his current actions with the expressed feelings of the
+other people in the room with whom I am positive he empathises with.
 
-As the debate rages I reflect on how incredibly intelligent and passionate
-this room of people is. Here I am, having fumbled my way into a lecture
-theater at the tip of Africa. The room consists of one of the most
-influential people in open source at the moment, battling it out against his
-equally bright and empassioned grassroots contemparies. Although there are
-conflicting opinions and seemingly unresolvable arguments, I feel safe in
-the knowledge that open source can only become stronger with people of this
-calibre involved in its creation and direction.
+As the debate rages I reflect on how incredibly smart and enthusiastic this
+room of people is. Here I am, having fumbled my way into a lecture theater
+at the tip of Africa. The room consists of one of the most influential
+people in open source, battling it out against his equally bright and
+passionate grassroots contemporaries. Although there are conflicting
+opinions and seemingly unresolvable arguments, I feel safe in the knowledge
+that open source can only become stronger with people of this calibre
+involved in its creation and direction.
