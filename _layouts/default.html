@@ -33,15 +33,7 @@
       </header>
       <div id="main_site_content">
         <div class="primary_content">
-          {% for post in site.posts %}
-            <header class="article_header">
-              <h1>{{ post.title }}</h1>
-              <span id="post_date">{{ post.date | date : "%A %d %B %Y" }}</span>
-            </header>
-            <article>
-              {{ post.content }}
-            </article>
-          {% endfor %}
+          {{ content }}
         </div>
       </div>
     </div>

@@ -2,6 +2,12 @@
 layout: default
 title: www.markscholtz.com
 ---
-<div id="home">
-  home
-</div>
+{% for post in site.posts %}
+  <header class="article_header">
+    <a class="article_header_link" href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+    <span id="post_date">{{ post.date | date : "%A %d %B %Y" }}</span>
+  </header>
+  <article>
+    {{ post.content }}
+  </article>
+{% endfor %}

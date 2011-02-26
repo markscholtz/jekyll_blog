@@ -120,6 +120,7 @@ article {
 }
 
 article a {
+  color: #333333;
   text-decoration: none;
 }
 
@@ -150,17 +151,18 @@ header.article_header {
 }
 
 header.article_header a {
-  color: black;
+  color: #333333;
   text-decoration: none;
 }
 
 header.article_header h1 {
   float: left;
-  font: bold;
   font-size: 2em;
+  font: bold;
 }
 
 header.article_header span {
+  color: #333333;
   float: right;
   padding-top: 10px;
 }
