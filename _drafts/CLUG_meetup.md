@@ -1,16 +1,15 @@
-CLUG meet up - Future conflict brewing between GNOME and Ubuntu communities
-===========================================================================
+A CLUG meet up - Future conflict brewing between GNOME and Ubuntu communities
+=============================================================================
 
-### Context ###
+CLUG, the Cape Linux User Group, meets twice a month at the University of
+Cape Town to discuss the latest news affecting the Linux world. I was lucky
+enough to attend a presentation given on a topic which is currently being
+discussed heatedly amongst people in the know.
 
-CLUG, the Cape Linux User Group meets twice a month to discuss the latest
-news affecting the Linux world. I was lucky enough to attend a presentation
-given on a topic which is currently being discussed heatedly amongst people
-in the know. I have just reread this story and realised without any
-background it makes little sense, so below some brief context.
+### Context: Linux? Ubuntu? GNOME!? ###
 
 Linux is an open source operating system similar to more well known
-offerings such as Microsoft's Windows and Apples Mac OS X. Each of these
+offerings such as Microsoft's Windows and Apple's Mac OS X. Each of these
 offers a unique experience which can be largely attributed to each ones
 representation of the desktop environment (the graphical metaphor used by
 each operating system to represent a physical desk). For most users of
@@ -21,11 +20,7 @@ Linux is that this is not the case. In fact almost the opposite can be said
 to be true. You are overwhelmed for choice. This has often been a stumbling
 block in the past for Linux's commercial adoption, but recently with the
 help of Canonical (a company started by Mark Shuttleworth [TODO: citation
-needed]), a new flavour of Linux called Ubuntu has become extremely popular.
-
-How popular you might ask. Well I'm too lazy to research and provide
-figures, but suffice to say my dad uses it without much hassle. OK he only
-really uses Gmail, but still, I think it's a strong argument. 
+needed]), a recent flavour of Linux called Ubuntu has become extremely popular.
 
 They have done this by making many choices for users that would previously
 have had to have been made by the users themselves. This is not to say that
@@ -38,46 +33,46 @@ experience for all spectrums of users, regardless of computer literacy.
 One of the major choices that Ubuntu has made in the past is which desktop
 environment to present to the user. As far as I am aware, this has
 historically always been GNOME (arguably Linux's most popular desktop
-environment next to KDE), but recently Ubuntu have begun to build their own
+environment next to KDE), but recently, Ubuntu have begun to build their own
 desktop environment based on GNOME called Unity. This is now the defacto
-desktop environment bundled with Ubuntu. This decision is the topic of
-contension that was discussed at the CLUG meetup that I attended. I have
-tried to capture the moment below.
+desktop environment bundled with Ubuntu. This decision was the topic of
+contention discussed at the CLUG meetup.
 
-### Story ###
+### Ubuntu, I am your father ###
 
-The slow, grating ascent of the projector screen sliding into its resting
-position behind speaker Phil Bull inspires awkwardness the likes of which
-Ricky Gervais would be proud to have created. There is a palpable
-anticipation in the air as we wait for the final few stragglers to arrive so
-that Phil can start his presentation. During this time the awkwardness
-subsides slightly as most of us settle into the comfortable seating of the
-seminar room and descend into a world that consists of the content being
-served up by our smartphones. This gives me reason to segue to an
-interesting side note; the guy in front of me has an iPhone 4 which is
-getting two bars of signal (albeit without applying the death grip). This,
-in comparison to my 3GS's zero bars, down in the cozy recess of the Chemical
-Engineering Building's Seminar Room at UCT is quite impressive.
+Down in the seminar room of UCT's Chemical Engineering Building, a projector
+screen makes its slow ascent into its resting position behind speaker Phil
+Bull. There is a palpable anticipation in the air as we await the final few
+stragglers. During this time we settle into comfortable seating, some of us
+descending into a world of the content being served up by our smartphones,
+whilst others discuss the evening ahead. Although Phil's presentation has
+yet to begin, decisions are already being made on a location to consume food
+and beer afterwards to carry on the conversation. I get the impression that
+this is going to be an exciting talk.
 
-OK, back on topic: the evening ahead is being discussed, and some of the
-group are already planning to head out after the talk for food and beer to
-carry on the conversation (which has yet to begin). An attendee rocks up in
-a Darth Vader mask. I begin to wonder to myself if this is the accepted
-modus operandi of choice for CLUG members. I can't help but smile as the
-extent of the pure geekiness of the moment starts to sink in and it is at
-this point that I'm glad to have discovered this group. I feel quite at
-home. It's enjoyable to hunker down here in the back of the room tapping
-away quietly on my phone trying to document the event. Being in a not too
-sociable mood this evening doesn't appear to be an issue at all.
+Moments later, an attendee rocks up in a Darth Vader mask and takes a seat.
+I begin to wonder to myself if this is acceptable attire for CLUG members.
+No one pays attention to the new arrival so I guess it is safe to assume
+that anything goes. I start to feel quit at home as the geekiness of the
+moment starts to envelop me and it is at this point that I'm glad to have
+discovered such a group.
 
 The talk begins and Phil Bull, an astrophysics PhD student from the
-University of Cambridge introduces himself. The focus of the presentation is
-on Phil's position in the community, which sees him torn between
-contributing to either GNOME or Ubuntu's Unity as it is no longer
-sustainable to do both given the two communities diverging ideologies.
-During his presentation there are a few joking warnings from Phil that the
-chosen content is not meant to entice a flame war (although I'm hoping to
-some degree that it does).
+University of Cambridge, introduces himself. The topic, the widening rift
+between the GNOME and Unity projects, is discussed from Phil's perspective
+as an open source community member who contributes to both. He is finding it
+more difficult to sustain his level of contributions to both projects over
+time as the two communities ideologies continue to diverge and seems to be
+coming to the sad conclusion that working on both will not be sustainable in
+the future.
+
+His presentation is unbiased and non-inflammatory, yet still Phil jokingly
+warns us that he is not here to entice a flame war. If I am to be completely
+honest I would have to say that this disappoints me.
+
+
+
+
 
 One of Phil Bull's major concerns is for developers who are now offered a
 splintered environment on which to develop as GNOME and Unity continue to
