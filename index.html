@@ -4,10 +4,17 @@ title: www.markscholtz.com
 ---
 {% for post in site.posts %}
   <header class="article_header">
-    <a class="article_header_link" href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
-    <span id="post_date">{{ post.date | date : "%A %d %B %Y" }}</span>
+    <a class="article_header_link" href="{{ post.url }}">
+      <h1>{{ post.title }}</h1>
+      {% if post.subtitle %}
+        <h2>{{ post.subtitle }}</h2>
+      {% endif %}
+    </a>
+    <div id="post_date">{{ post.date | date : "%A %d %B %Y" }}</div>
   </header>
   <article>
-    {{ post.content }}
+    <div class="test">
+      {{ post.content }}
+    </div>
   </article>
 {% endfor %}
