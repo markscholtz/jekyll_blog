@@ -26,7 +26,7 @@ almost the opposite can be said to be true for Linux as you are normally
 overwhelmed for choice.  This has often been a stumbling block in the past
 for Linux's commercial adoption, but recently with the help of
 [Canonical](http://www.canonical.com) (a company started by Mark
-Shuttleworth), a recent flavour of Linux called
+Shuttleworth), a new flavour of Linux called
 [Ubuntu](http://www.ubuntu.com/) has become extremely popular.
 
 They have done this by making many choices for users that would previously
