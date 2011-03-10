@@ -31,6 +31,9 @@ header, nav, section, aside, footer, article {
 }
 /* html5 styling */
 
+/* always force a scrollbar in non-IE */
+html { overflow-y: scroll; }
+
 html, body {
   height: 100%;
 }
@@ -41,11 +44,32 @@ body {
 
 /*Opera Fix*/
 body:before {
-	content: "";
-	height: 100%;
-	float: left;
-	width: 0;
-	margin-top: -32767px;/
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;/
+}
+
+/* !-- links --! */
+a,
+a:link,
+a:visited {
+  color:#444;
+  text-decoration:none;
+  border-bottom-width:1px;
+  border-bottom-style: solid;
+  border-bottom-color:#444;
+  border-bottom-color:rgba(0,0,0,0.7);
+}
+
+a:hover {
+  color:#666;
+  color:rgba(0,0,0,0.5);
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-bottom-color:#666;
+  border-bottom-color:rgba(0,0,0,0.5);
 }
 
 p {
@@ -119,11 +143,6 @@ article {
   text-align: left;
 }
 
-article a {
-  color: #333333;
-  text-decoration: none;
-}
-
 article h1 {
   font-size: 1.5em;
 }
@@ -133,6 +152,10 @@ article h2 {
   font-size: 1.5em;
   padding-left: 5px;
   padding-top: 15px;
+}
+
+article p {
+  font-size: 0.95em;
 }
 
 footer.article_footer {
@@ -145,25 +168,26 @@ footer.article_footer h2 {
   font-size: 1.5em;
 }
 
-header.article_header {
-  border-bottom: 3px solid #33CCCC;
-  height: 3em;
-}
-
 header.article_header a {
   color: #333333;
   text-decoration: none;
 }
 
 header.article_header h1 {
-  float: left;
   font-size: 2em;
   font: bold;
 }
 
-header.article_header span {
-  color: #333333;
-  float: right;
-  padding-top: 10px;
+header.article_header h2 {
+  /*font-size: 2em;*/
+  /*font: bold;*/
+  padding-bottom: 5px;
+}
+
+header.article_header div {
+  border-top: 3px solid #33CCCC;
+  color: #666666;
+  padding: 5px 7px 0 0;
+  text-align: right;
 }
 /* Article */

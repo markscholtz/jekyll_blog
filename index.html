@@ -13,8 +13,6 @@ title: www.markscholtz.com
     <div id="post_date">{{ post.date | date : "%A %d %B %Y" }}</div>
   </header>
   <article>
-    <div class="test">
-      {{ post.content }}
-    </div>
+    {{ post.content }}
   </article>
 {% endfor %}
