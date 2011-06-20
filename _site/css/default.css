@@ -35,6 +35,8 @@ header, nav, section, aside, footer, article {
 html { overflow-y: scroll; }
 
 html, body {
+  background: #FDF6E3;
+  color: #657B83;
   height: 100%;
 }
 
@@ -55,20 +57,20 @@ body:before {
 a,
 a:link,
 a:visited {
-  color:#444;
+  color:#073642;
   text-decoration:none;
   border-bottom-width:1px;
   border-bottom-style: solid;
-  border-bottom-color:#444;
+  border-bottom-color:#073642;
   border-bottom-color:rgba(0,0,0,0.7);
 }
 
 a:hover {
-  color:#666;
+  color:#93a1a1;
   color:rgba(0,0,0,0.5);
   border-bottom-width:1px;
   border-bottom-style:solid;
-  border-bottom-color:#666;
+  border-bottom-color:#93a1a1;
   border-bottom-color:rgba(0,0,0,0.5);
 }
 
@@ -82,8 +84,8 @@ p {
 }
 
 header#site_header {
-  background-color: #666666;
-  border-bottom: 3px solid #33CCCC;
+  background-color: #073642;
+  border-bottom: 3px solid #2AA198;
   height: 60px;
   padding: 20px 0;
 }
@@ -93,23 +95,23 @@ header#site_header a {
 }
 
 header#site_header h1 {
-  color: white;
+  color: #fdf6e3;
   font-size: 36px;
   padding-left: 9%;
 }
 
 header#site_header span#mark_span {
-  color: #33CCCC;
+  color: #2AA198;
   padding-right: 2px;
 }
 
 header#site_header span#period_span {
-  color: #33CCCC;
+  color: #2AA198;
 }
 
 footer#site_footer {
-  background-color: #666666;
-  border-top: 3px solid #33CCCC;
+  background-color: #073642;
+  border-top: 3px solid #2AA198;
   clear: both;
   height: 100px;
   margin-top: -103px;
@@ -118,7 +120,7 @@ footer#site_footer {
 }
 
 footer#site_footer p {
-  color: white;
+  color: #fdf6e3;
   padding-top: 8px;
 }
 
@@ -148,7 +150,7 @@ article h1 {
 }
 
 article h2 {
-  color: #666666;
+  color: #586e75;
   font-size: 1.5em;
   padding-left: 5px;
   padding-top: 15px;
@@ -169,7 +171,7 @@ footer.article_footer h2 {
 }
 
 header.article_header a {
-  color: #333333;
+  color: #073642;
   text-decoration: none;
 }
 
@@ -185,8 +187,8 @@ header.article_header h2 {
 }
 
 header.article_header div {
-  border-top: 3px solid #33CCCC;
-  color: #666666;
+  border-top: 3px solid #2AA198;
+  color: #657B83;
   padding: 5px 7px 0 0;
   text-align: right;
 }
