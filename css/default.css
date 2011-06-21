@@ -40,6 +40,17 @@ html, body {
   height: 100%;
 }
 
+::selection {
+  background:#D33682;
+  color:#FCF4DC;
+  text-shadow: none;
+}
+::-moz-selection {
+  background:#D33682;
+  color:#FCF4DC;
+  text-shadow: none;
+}
+
 body {
   font: 100%/1.5 "Helvetica Neue", Helvetica, Arial;
 }
