@@ -16,13 +16,12 @@ The colour-scheme is named
 [Solarized](http://ethanschoonover.com/solarized) by [Ethan
 Schoonover](http://ethanschoonover.com/) and has been making quite a few
 ripples amongst geeks on the web. I believe it really started spreading
-after appearing on [Hacker News](http://news.ycombinator.com/), but
-I could be horribly wrong about that. Anyway, regardless of how it
-came to my knowledge, it is really one of the nicest colour-schemes
-that I have used for a while. It also comes in a light or dark theme
-to suit whatever mood you happen to be in at the time (I'm talking
-about Solarized - the colour-scheme in this instance - not this site
-unfortunately).
+after appearing on [Hacker News](http://news.ycombinator.com/), but I
+could be horribly wrong about that. Anyway, regardless of how it came
+to my knowledge, it is really one of the nicest colour-schemes that
+I have used for a while. It also comes in a light or dark theme to
+suit whatever mood you happen to be in at the time (I'm talking about
+Solarized - the colour-scheme in this instance - not this site).
 
 And so after a few months of use I thought why not apply it to this
 site to improve its looks somewhat. I think it's an improvement
