@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>markscholtz.com</title>
+ <link href="http://markscholtz.com/feed/atom.xml" rel="self"/>
+ <link href="http://markscholtz.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://markscholtz.com/</id>
+ <author>
+   <name>Mark Scholtz</name>
+   <email>message@markscholtz.com</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+
+   {% if post.subtitle %}
+   <title>{{ post.title }} -- {{ post.subtitle }}</title>
+   {% else %}
+   <title>{{ post.title }}</title>
+   {% endif %}
+   <link href="http://markscholtz.com{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://markscholtz.com{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>

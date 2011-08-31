@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>markscholtz.com</title>
+ <link href="http://markscholtz.com/feed/atom.xml" rel="self"/>
+ <link href="http://markscholtz.com/"/>
+ <updated>2011-08-31T23:45:05+02:00</updated>
+ <id>http://markscholtz.com/</id>
+ <author>
+   <name>Mark Scholtz</name>
+   <email>message@markscholtz.com</email>
+ </author>
+
+ 
+ <entry>
+
+   
+   <title>Buy Quality Software -- You won’t regret it</title>
+   
+   <link href="http://markscholtz.com/2011/08/29/buy-quality-software"/>
+   <updated>2011-08-29T00:00:00+02:00</updated>
+   <id>http://markscholtz.com/2011/08/29/buy-quality-software</id>
+   <content type="html">&lt;p&gt;I just started looking for some wireframing software to help me design a better user experience for a project I’m working on. I immediately remembered &lt;a href='http://www.balsamiq.com/'&gt;Balsamiq&lt;/a&gt; after having only ever heard good things about it and so I navigated over to their website, watched the introductory video, and read up about the features. Then I saw the price: $80&amp;#8230;a fairly steep price tag for a piece of software that I only just realised I needed and that I might not use very often, but the thing is, I’m convinced that it’s worth it. Why?&lt;/p&gt;
+
+&lt;p&gt;I’ll be honest here and say that I was once a user of pirated software, but became more begrudging of doing so as I began to understand the value of what I was using. My evolution as a computer user is probably a fair approximation of many people’s history with the device; a kid with a PC running whatever software it came with; a student with zero budget where the thought of laying out my own money on hardware was a big enough decision to make me not even think twice about using pirated software if I needed to; a PC user who had just started to earn a reasonable income; and now, a working professional dependent on using a computer on a daily basis.&lt;/p&gt;
+
+&lt;p&gt;This evolution has allowed me to come to the realisation that buying quality software is an absolute pleasure. My previous modus operandi when looking for software for a specific task was to spend several hours (or even days sometimes) researching what was out there only to find that most of what I had come across *gasp* costs money. This research would inevitably follow a familiar path, starting with me trying to find the best free version of something that sounded like it might meet my needs (which was almost never the case), and ending in frustration, where I eventually just give up and decide not to pursue whatever it was I had intended to do in the first place. All of this to avoid paying what sometimes turned out to be a trivial amount of money anyway (how often have you agonised over a decision to buy a piece of software that probably only cost the equivalent of a couple of beers and will most likely come in handy every day, only to not buy it and then blow far more than that on a night out).&lt;/p&gt;
+
+&lt;p&gt;This all started to change for me when I bought my first iPhone. It was my gateway drug to buying quality software. $1/2 dollar applications were easily discoverable (most as recommendations from current, happy users) and provided utility that far outweighed their cost. It was purchasing these apps that started to warm me to the idea of paying for quality, something that I inevitably do when purchasing just about anything else. The intangibility of software sometimes makes it hard to justify the price, but just stop and think for a minute how much time you spend using a computer. I’m a developer and so for me it&amp;#8217;s the majority of my time almost every day. The higher the amount of time spent, the higher the cost is of not using quality software.&lt;/p&gt;
+
+&lt;p&gt;Switching to using a Mac turned out to be the next logical step on my journey to becoming a happy software purchaser. The software available for the Mac ecosystem is, in general, extremely well thought through and user-centric. Much of it is also lovingly crafted by indie software developers. The software I have bought so far has been a joy to use and I feel like a more productive computer user as a consequence, which is of vital importance to me. When you start using software that works with you and not against you, you start to experience a new kind of appreciation for software that accomplishes this.&lt;/p&gt;
+
+&lt;p&gt;The message of this post may be perceived as: &amp;#8220;in order to buy quality software, you need to become some kind of Apple fanboy who jumps at the opportunity to throw money at a problem&amp;#8221;. That is not my intention at all. Whichever platform you happen to be on, seek out the opinions of your peers, take heed of the recommendations made by influential members of whichever communities you happen to be involved in and follow your intuition when coming across an &amp;#8220;expensive&amp;#8221; piece of software that is loved by it&amp;#8217;s users. Sometimes the best solution is free (yay open source) and that&amp;#8217;s great, but sometimes it isn&amp;#8217;t. If that is the case, don&amp;#8217;t feel rushed into making a purchase, mull it over for a while and figure out in your own time whether you really need that piece of software, and when you realise that you do, buy it!&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+
+   
+   <title>Easy on the eyes</title>
+   
+   <link href="http://markscholtz.com/2011/07/18/easy-on-the-eyes"/>
+   <updated>2011-07-18T00:00:00+02:00</updated>
+   <id>http://markscholtz.com/2011/07/18/easy-on-the-eyes</id>
+   <content type="html">&lt;p&gt;Hopefully I am self aware enough to identify many of my faults, but one that any reader of the first three posts of this site would have been exposed to would be my somewhat lacking design skills. To resolve this wrongdoing I have taken inspiration from a colour-scheme that I have been using for a while now in quite a few of the applications that I use on a day to day basis (Vim/MacVim, iTerm2 and even OmniFocus) to update the look of my blog (yes, I know the design is still quite rudimentary, but I&amp;#8217;ll get there one day).&lt;/p&gt;
+
+&lt;p&gt;The colour-scheme is named &lt;a href='http://ethanschoonover.com/solarized'&gt;Solarized&lt;/a&gt; by &lt;a href='http://ethanschoonover.com/'&gt;Ethan Schoonover&lt;/a&gt; and has been making quite a few ripples amongst geeks on the web. I believe it really started spreading after appearing on &lt;a href='http://news.ycombinator.com/'&gt;Hacker News&lt;/a&gt;, but I could be horribly wrong about that. Anyway, regardless of how it came to my knowledge, it is really one of the nicest colour-schemes that I have used for a while. It also comes in a light or dark theme to suit whatever mood you happen to be in at the time (I&amp;#8217;m talking about Solarized - the colour-scheme in this instance - not this site).&lt;/p&gt;
+
+&lt;p&gt;And so after a few months of use I thought why not apply it to this site to improve its looks somewhat. I think it&amp;#8217;s an improvement and I hope you do too. If you spend any amount of time in a text editor/terminal/IDE, I strongly recommend downloading the appropriate theme and giving it a try. I&amp;#8217;m sure your retinas will thank you for it. Also check out &lt;a href='https://github.com/altercation/solarized'&gt;the official project on GitHub&lt;/a&gt; if you feel like porting the colour-scheme to your favourite app and sharing the love.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+
+   
+   <title>A CLUG meet up -- Future conflict brewing between GNOME and Ubuntu communities</title>
+   
+   <link href="http://markscholtz.com/2011/03/10/a-clug-meetup"/>
+   <updated>2011-03-10T00:00:00+02:00</updated>
+   <id>http://markscholtz.com/2011/03/10/a-clug-meetup</id>
+   <content type="html">&lt;p&gt;&lt;a href='http://wiki.clug.org.za/wiki/Main_Page'&gt;CLUG&lt;/a&gt;, the Cape Linux User Group, meets twice a month at the University of Cape Town to discuss the latest news impacting the Linux world. Recently I was lucky enough to attend a presentation given on a topic which is currently being heatedly discussed amongst people in the know.&lt;/p&gt;
+
+&lt;h2 id='context_linux_ubuntu_gnome'&gt;Context: Linux? Ubuntu? GNOME!?&lt;/h2&gt;
+
+&lt;p&gt;Linux is an open source operating system similar to more well known offerings such as Microsoft&amp;#8217;s Windows and Apple&amp;#8217;s Mac OS X. Each of these offers a unique experience which can be largely attributed to each ones representation of the &lt;a href='http://en.wikipedia.org/wiki/Desktop_environment'&gt;desktop environment&lt;/a&gt; (the graphical metaphor used by each operating system to represent a physical desk). For most users of commercial operating systems, like Windows and OS X there is no option given when it comes to the desktop environment; there is no choice in the matter and you use what you get. This is not necessarily a bad thing, but the beauty of Linux is that this is not the case. In fact, almost the opposite can be said to be true for Linux as you are normally overwhelmed for choice. This has often been a stumbling block in the past for Linux&amp;#8217;s commercial adoption, but recently with the help of &lt;a href='http://www.canonical.com'&gt;Canonical&lt;/a&gt; (a company started by Mark Shuttleworth), a new flavour of Linux called &lt;a href='http://www.ubuntu.com/'&gt;Ubuntu&lt;/a&gt; has become extremely popular.&lt;/p&gt;
+
+&lt;p&gt;They have done this by making many choices for users that would previously have had to be made by the users themselves. This is not to say that the customisability and power of Linux has been removed from Ubuntu, but rather the whole experience has been made far more approachable for the regular user, whilst still giving the expert flexibility and choice. Since having recently moved to Mac OS X myself, I can say that both offer an equally compelling experience for all spectrums of users, regardless of computer literacy.&lt;/p&gt;
+
+&lt;p&gt;One of the major decisions that Ubuntu takes on the users behalf, is which desktop environment to present. As far as I am aware, this has historically been &lt;a href='http://en.wikipedia.org/wiki/GNOME'&gt;GNOME&lt;/a&gt; (arguably Linux&amp;#8217;s most popular desktop environment next to &lt;a href='http://en.wikipedia.org/wiki/KDE_Plasma_Workspaces'&gt;KDE&lt;/a&gt;), but recently, Ubuntu have begun to build their own desktop environment based on GNOME called Unity, which is becoming Ubuntu&amp;#8217;s de facto desktop environment. The current netbook edition of Ubuntu (10.10) already uses Unity by default and the upcoming release of Ubuntu&amp;#8217;s flagship desktop edition (11.04) will use it too, completing the transition away from GNOME to Unity. Canonical&amp;#8217;s decision to develop Unity rather than putting effort into improving GNOME has been viewed as controversial and seems to be driving a wedge between the two communities, causing uncooperative behavior where previously there was a collective effort towards a single vision. This decision and the ramifications thereof is the topic of contention to be discussed at this particular CLUG meetup.&lt;/p&gt;
+
+&lt;h2 id='our_story_begins_this_fateful_evening_'&gt;Our story begins this fateful evening &amp;#8230;&lt;/h2&gt;
+
+&lt;p&gt;&amp;#8230; down in the seminar room of UCT&amp;#8217;s Chemical Engineering Building, where a projector screen makes its slow ascent into its resting position behind speaker Phil Bull. There is a palpable anticipation in the air as we await the final few stragglers. During this time we settle into comfortable seating, some of us descending into a world consisting of the content being served up by our smartphones, whilst others talk of the evening ahead. Although it has not yet begun, plans are already being made to further discuss the presentation over food and beer later in the evening. Just then an attendee rocks up in a Darth Vader mask and takes a seat. I begin to wonder to myself if this is acceptable attire for CLUG members. No one pays attention to the new arrival so I guess it is safe to assume that anything goes. I start to feel quite at home as the geekiness of the moment starts to envelop me and it is at this point that I&amp;#8217;m glad to have discovered such a group.&lt;/p&gt;
+
+&lt;p&gt;The talk begins and Phil Bull, an astrophysics PhD student from the University of Cambridge, introduces himself. The topic for tonight is the widening rift between the GNOME and Unity communities. It is discussed from Phil&amp;#8217;s unique perspective as an open source community member who contributes to both projects in the form of much needed documentation. From his vantage point, Phil can see the worrying extent to which the communities are becoming fractured, and just how hard this is going to make it for developers to maintain applications that work on both platforms.&lt;/p&gt;
+
+&lt;p&gt;Personally he is finding it more difficult to sustain his level of contributions to both projects as the two communities&amp;#8217; ideologies continue to diverge, and he seems to be coming to the sad conclusion that working on both will not be sustainable in the future. The tone of his presentation paints a seemingly bleak future for Linux and the end user experience that it offers, not to mention the difficulties facing developers and other contributors looking to build on the good work done by others. It&amp;#8217;s fascinating to see that the open source world is plagued by similar issues to those found in the commercial equivalent.&lt;/p&gt;
+
+&lt;p&gt;Phil&amp;#8217;s talk ends with a well deserved round of applause. He comes across as an amicable person who is extremely passionate about what he does, and he has a genuine concern about the well being of all parties involved in this latest open source conflict.&lt;/p&gt;
+
+&lt;p&gt;It is time for questions and although his presentation was unbiased and non-inflammatory, Phil still jokingly warns us that he is not here to entice a flame war. The questions posed to Phil are challenging indeed, but one of the most interesting to me is to find out which path he will choose considering he made it clear that he can&amp;#8217;t work on both projects. His decision - GNOME. Sorry Canonical, but you seem to have lost a good man due to what sounds like a spiteful insistence to split the efforts of the community. Another challenging question arrives in the form of a request to further justify Canonical&amp;#8217;s reasoning for their actions. Some in the crowd are unsatisfied with Phil&amp;#8217;s earlier explanation given during his presentation, feeling it didn&amp;#8217;t fully explain Canonical&amp;#8217;s seemingly aggressive move.&lt;/p&gt;
+
+&lt;h2 id='ubuntu_i_am_your_father'&gt;Ubuntu, I am your father&lt;/h2&gt;
+
+&lt;p&gt;&amp;#8220;I think I would be better able to provide satisfactory answers to that question&amp;#8221; quips a voice punctuated by heavy breathing from the Darth Vader mask, which is removed to reveal none other than Mark Shuttleworth! My timing in attending a CLUG session could not have been better as excitement is now at fever pitch &amp;#8230; or perhaps that&amp;#8217;s just me and this is just a day in the life of a CLUG member, as everyone seems to look suitably unimpressed. At least the mask-wearing enigma now makes sense to me. Not wanting to sway the direction of Phil&amp;#8217;s talk with his presence, Shuttleworth donned the mask in order to hear the thoughts of the community.&lt;/p&gt;
+
+&lt;p&gt;Shuttleworth&amp;#8217;s mind operates on a level far more advanced than mine and combined with my lack of background knowledge on the subject I find it difficult to keep up, however, his answers are well explained and eloquently expressed, allowing me to keep abreast of the debate. I am instantly convinced by his arguments and happily forgive him and Canonical of any potential wrongdoing, but of course the rest of the crowd was not going to let him off that lightly and further challenging questions are flung his way. Shuttleworth doesn&amp;#8217;t miss a beat in answering any of them, and the impression I get from his answers is that they are all personal and not just a representation of his company&amp;#8217;s position. He is questioned on many diverse topics: the legal implications of the software licences that Canonical employs (which seem to deprive contributors of their right to own the intellectual property created by their contributions); his opinion on the split in the community and why it came about; Canonicals apparent lack of giving back to the community they are only too happy to take from; and many others.&lt;/p&gt;
+
+&lt;p&gt;From my position as a completely neutral observer overlooking the discussion, I notice the dichotomy that exists between Shuttleworth and his contemporaries. The personalities in the room could not be more polar in nature. Although his peers are equally impassioned and intelligent, Shuttleworth comes across as a powerhouse, full of confidence and conviction in what he is doing.&lt;/p&gt;
+
+&lt;p&gt;As the debate rages I reflect on how incredibly smart and enthusiastic this room of people are. Here I am, having fumbled my way into a seminar room at the tip of Africa, which consists of one of the most influential people in open source, battling it out against his equally bright and passionate grassroots contemporaries. Although there are conflicting opinions and seemingly unresolvable arguments, I feel safe in the knowledge that open source can only become stronger with people of this calibre involved in its creation and direction.&lt;/p&gt;
+
+&lt;h2 id='final_thoughts'&gt;Final thoughts&lt;/h2&gt;
+
+&lt;p&gt;Although I may not have fully comprehended the entire debate, it was undoubtedly fascinating. If you are looking for a far more coherent explanation of Phil&amp;#8217;s frustrations, check out &lt;a href='http://philbull.livejournal.com/58459.html'&gt;his own blog post&lt;/a&gt; on the matter. There are also some fiery comments to his post that are worth a read to see the debate in action. Further commentary on Phil&amp;#8217;s presentation can be found in the CLUG mailing list archives (&lt;a href='http://lists.clug.org.za/pipermail/clug-chat/2011-February/027058.html'&gt;Feb&lt;/a&gt;, &lt;a href='http://lists.clug.org.za/pipermail/clug-chat/2011-March/027075.html'&gt;Mar&lt;/a&gt;) where the discussion also continues. If your appetite is still not satiated, a Google search for &lt;a href='http://www.google.com/search?sourceid=chrome&amp;amp;ie=UTF-8&amp;amp;q=gnome+shell+vs+unity'&gt;GNOME Shell vs. Unity&lt;/a&gt; should do the trick.&lt;/p&gt;
+
+&lt;p&gt;I would highly recommend attending a CLUG event if you happen to live in Cape Town or are just visiting. The members are friendly and the topics extremely interesting.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+
+   
+   <title>Execution over ideas</title>
+   
+   <link href="http://markscholtz.com/2011/02/07/execution-over-ideas"/>
+   <updated>2011-02-07T00:00:00+02:00</updated>
+   <id>http://markscholtz.com/2011/02/07/execution-over-ideas</id>
+   <content type="html">&lt;p&gt;Lately I&amp;#8217;ve been thinking quite a bit about execution over ideas. Not consciously thinking about it, but rather other ideas floating around in my head have sort of massaged themselves together into this one central thought. It is a concept stressed often in technology; one I&amp;#8217;m trying to embrace. It&amp;#8217;s hard. Especially when there is much to learn and time is so limited.&lt;/p&gt;
+
+&lt;p&gt;The creation and planned evolution of this blog feels like an ideal chance to exercise this concept in the real world (so to speak).&lt;/p&gt;
+
+&lt;p&gt;For example, I must have drafted up a first blog post a number of times. In fact, if I had to tally the number of initial drafts on my hands I would probably run out of digits. Besides drafting up an initial post, I also had the distraction of choosing how to distribute my thoughts. I tried setting up different blogging engines and even began writing my own one before deciding on the current setup mentioned in my previous post.&lt;/p&gt;
+
+&lt;h2 id='accountability'&gt;Accountability&lt;/h2&gt;
+
+&lt;p&gt;When it comes to execution, there is nothing better than being accountable in order to motivate yourself. Often taking into account &amp;#8220;the quality factor&amp;#8221; is a trick that the mind plays to distract you from executing. It&amp;#8217;s often easy to delay doing something until &amp;#8220;it&amp;#8217;s just right&amp;#8221; (a trap I&amp;#8217;m frequently caught by). With that in mind I think a bi-monthly post of questionable quality is an achievable goal. The content might not be relevant or coherently explained, but practice is ultimately the only way to better yourself at anything.&lt;/p&gt;
+
+&lt;h2 id='a_brief_history_of_inspiration'&gt;A brief history of inspiration&lt;/h2&gt;
+
+&lt;p&gt;Jeffrey Zeldman is a person that I greatly admire on the web. His fame has been documented elsewhere much more thoroughly than I could hope to achieve here, so I&amp;#8217;ll just point you in his &lt;a href='http://www.google.com/#sclient=psy&amp;amp;hl=en&amp;amp;site=&amp;amp;source=hp&amp;amp;q=jeffrey+zeld
+man&amp;amp;aq=f&amp;amp;aqi=&amp;amp;aql=&amp;amp;oq=&amp;amp;pbx=1&amp;amp;fp=5e8018494988cd9d'&gt;vague direction&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The reason I mention Mr Zeldman above is that it is my understanding that his blog started in an iterative fashion, one that I&amp;#8217;d like to emulate. It literally started with content first and was then fleshed out from there by adding design and other features around it. An iterative process that over time has resulted in a blog that is followed by many at &lt;a href='http://www.zeldman.com'&gt;zeldman.com&lt;/a&gt;. I personally found that particular insight into how he created his blog inspirational, however anecdotal it might be. It is an approach that fully embraces execution over ideas. Looks like it works pretty well.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+
+   
+   <title>A long time coming</title>
+   
+   <link href="http://markscholtz.com/2011/01/16/a-long-time-coming"/>
+   <updated>2011-01-16T00:00:00+02:00</updated>
+   <id>http://markscholtz.com/2011/01/16/a-long-time-coming</id>
+   <content type="html">&lt;p&gt;As the title states, this blog post has been a long time coming. Too long in fact. I&amp;#8217;ve deliberated over using a blogging service (like Tumblr) or building something from scratch using Rails. Neither choice felt quite right. Hopefully I&amp;#8217;ve struck a decent balance by settling with &lt;a href='https://github.com/mojombo/jekyll'&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Jekyll is a ruby gem that allows you to write your blog posts in a markdown language of your choice (mine being John Gruber&amp;#8217;s &lt;a href='http://daringfireball.net/projects/markdown/'&gt;Markdown&lt;/a&gt;) and insert those posts into layouts. This seemed like a decent compromise. I get full control over the site (styling, hosting, content control, backup, etc) without having to implement something that has been done hundreds of times before to a much higher standard than I could probably achieve.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;m sure I will become dissatisfied with some aspect of this setup at some point in the future, but for now I&amp;#8217;m happy. As a software developer I struggle immensely with prioritisation. Setting up this blog has been a perfect case in point. Sometimes I wonder if I hide my procrastinating ways under the guise of perfectionism.&lt;/p&gt;</content>
+ </entry>
+ 
+
+</feed>
