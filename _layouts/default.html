@@ -17,13 +17,74 @@
   <body>
     <div id="wrap">
       <header id="site_header">
-      <a href="http://markscholtz.com">
-        <h1><span id="mark_span">mark</span>scholtz<span id="period_span">.</span>com</h1>
-      </a>
+        <h1>
+          <a id="markscholtz_link" href="http://markscholtz.com">
+            mark<span id="scholtz_span">scholtz</span>.<span id="com_span">com</span>
+          </a>
+        </h1>
       </header>
       <div id="main_site_content">
         <div class="primary_content">
           {{ content }}
+        </div>
+        <div class="secondary_content">
+          <div class="colophon">
+            <h2 class="secondary_heading">
+              Hi, I'm Mark
+            </h2>
+            <p>
+              I'm a developer from Cape Town and this is my blog, a little
+              corner of the internet all of my own. It's not very cosy yet, but
+              it's getting there.
+            </p>
+            <p>
+              I'm a latecomer to the wonders of Rails, a student of Ruby, an
+              agile proponent, a lover of all things web, an Apple enthusiast
+              and, occasionally, a runner.
+            </p>
+          </div>
+          <div class="rss">
+            <h2 class="secondary_heading">
+              Subscribe
+            </h2>
+            <p>
+              <a id="rss_button" class="button" href="http://feeds.feedburner.com/markscholtz">
+                rss
+              </a>
+            </p>
+          </div>
+          <div class="social">
+            <h2 class="secondary_heading">
+              Connect
+            </h2>
+            <ul>
+              <li>
+                <a id="email_button" class="button" href="mailto:message@markscholtz.com">
+                  email
+                </a>
+              </li>
+              <li>
+                <a id="twitter_button" class="button" href="https://twitter.com/#!/markscholtz">
+                  twitter
+                </a>
+              </li>
+              <li>
+                <a id="google_plus_button" class="button" href="https://plus.google.com/104848639023894611373/posts">
+                  google+
+                </a>
+              </li>
+              <li>
+                <a id="linkedin_button" class="button" href="http://za.linkedin.com/in/markscholtz">
+                  linkedin
+                </a>
+              </li>
+              <li>
+                <a id="github_button" class="button" href="https://github.com/markscholtz">
+                  github
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
