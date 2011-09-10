@@ -245,3 +245,22 @@ img {
 .vertical_align_middle {
   vertical-align: middle;
 }
+
+.font {
+  font-family: 'JustVectorRegular';
+  font-size: 3em;
+}
+
+.font2 {
+  font-family: 'JustVector';
+  font-size: 3em;
+}
+
+.font span {
+  font-family: Helvetica, Arial;
+  font-size: 0.34em;
+}
+.font2 span {
+  font-family: Helvetica, Arial;
+  font-size: 0.34em;
+}
