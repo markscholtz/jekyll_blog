@@ -2,10 +2,7 @@
 
 ## About ##
 
-A repository for backing up my "blog" content.
-
-This is probably my third or fourth attempt at creating a blog. Hopefully once
-I actually get some content up it would have been worth it.
+My personal blog.
 
 ## Credits ##
 
