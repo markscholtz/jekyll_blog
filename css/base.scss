@@ -1,0 +1,70 @@
+/* Colours */
+$background_colour: #FDF6E3;
+$blue_grey: #657B83;
+$dark_blue: #073642;
+$hot_pink: rgb(255, 75, 110);
+$light_green: #00CCBB;
+$text_colour: #3D3D42;
+$white: #FEFEFF;
+
+/* Padding and Borders */
+$footer_padding: 100px;
+$main_border_height: 3px;
+
+@mixin selection {
+  background:$hot_pink;
+  color: $white;
+  text-shadow: none;
+}
+
+/* html5 styling */
+header, nav, section, aside, footer, article {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+/* Always force a scrollbar in non-IE */
+html { overflow-y: scroll; }
+
+html, body {
+  background: $background_colour;
+  color: $text_colour;
+  height: 100%;
+}
+
+::selection {
+  @include selection;
+}
+::-moz-selection {
+  @include selection;
+}
+
+body {
+  font: 100%/1.5 "Helvetica Neue", Helvetica, Arial;
+}
+
+/* Opera fix - for the sticky footer I believe */
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+}
+
+/* !-- links --! */
+a,
+a:link,
+a:visited {
+  color: $dark_blue;
+  font-weight: bold;
+  text-decoration:none;
+  &:hover {
+    color:$hot_pink;
+  }
+}
+
+p {
+  padding: 10px 0;
+}
