@@ -4,13 +4,30 @@
  <title>markscholtz.com</title>
  <link href="http://markscholtz.com/feed/atom.xml" rel="self"/>
  <link href="http://markscholtz.com/"/>
- <updated>2011-10-02T20:19:03+02:00</updated>
+ <updated>2012-05-22T18:04:36+02:00</updated>
  <id>http://markscholtz.com/</id>
  <author>
    <name>Mark Scholtz</name>
    <email>message@markscholtz.com</email>
  </author>
 
+ 
+ <entry>
+
+   
+   <title>Vimux</title>
+   
+   <link href="http://markscholtz.com/2012/05/22/vimux"/>
+   <updated>2012-05-22T00:00:00+02:00</updated>
+   <id>http://markscholtz.com/2012/05/22/vimux</id>
+   <content type="html">&lt;p&gt;Recently, thanks to &lt;a href='http://robots.thoughtbot.com/post/2166174647/love-hate-tmux'&gt;tmux&lt;/a&gt;, I have been enjoying the experience of having the majority of my development toolset consolidated within a single terminal window, which provides me with a common, distraction-free work environment.&lt;/p&gt;
+
+&lt;p&gt;During Rails development I work almost exclusively within this workspace, but for some reason I have been reluctant to leave MacVim behind and transition fully to a text-only environment. I’m not sure of the cause of this reluctance as I don&amp;#8217;t take advantage of any of the extra features provided by MacVim so I eventually took the plunge and started to use terminal vim. I&amp;#8217;ve really enjoyed the experience so far, but today I believe I have found a tool that will make it difficult to go back.&lt;/p&gt;
+
+&lt;p&gt;If you use &lt;a href='http://www.vim.org/'&gt;vim&lt;/a&gt; and &lt;a href='http://tmux.sourceforge.net/'&gt;tmux&lt;/a&gt; then I would highly recommend installing &lt;a href='https://github.com/benmills/vimux'&gt;vimux&lt;/a&gt;. It is a fantastic vim plugin that allows you to send commands from within vim to another tmux pane in the same window, creating it if it doesn&amp;#8217;t exist. One use case of this is to execute the current spec file that you are working on in vim in a new tmux pane and then whilst it runs you are free to navigate the file within vim. That is just one example and if it is not a clear enough explanation of the potential of vimux may I suggest the &lt;a href='https://github.com/benmills/vimux/blob/master/README.mkd'&gt;readme&lt;/a&gt; which shows some great examples of how it can be used. However, I read the readme and wasn&amp;#8217;t immediately convinced so do yourself a favour and just install it. Copy the &lt;a href='https://github.com/benmills/vimux/blob/master/README.mkd#full-keybind-example'&gt;keybindings&lt;/a&gt; into your .vimrc and just give it a try. It&amp;#8217;s great!&lt;/p&gt;
+
+&lt;p&gt;As there aren&amp;#8217;t any details in this post about my actual terminal configuration and tools, feel free to get in touch if you would like to know more about my current setup.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
 
