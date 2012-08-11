@@ -80,7 +80,7 @@ div#main_site_content {
       padding: 10px 0 20px 0;
       text-align: left;
       p {
-        font-size: 0.95em;
+        font-size: 1.05em;
       }
       h2 {
         font-size: 1.5em;
@@ -111,7 +111,7 @@ div#main_site_content {
       font-weight: normal;
     }
     p, li, a {
-      font-size: 0.85em;
+      font-size: 0.9em;
     }
     h2 {
       background-color: $hot_pink;
@@ -161,6 +161,13 @@ div#main_site_content {
       background-position: 0px -128px;
       &:hover {
         background-position: -32px -128px;
+      }
+    }
+
+    #facebook_button {
+      background-position: 0px -192px;
+      &:hover {
+        background-position: -32px -192px;
       }
     }
 
