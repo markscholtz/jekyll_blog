@@ -1,4 +1,8 @@
-auto: false
+server: true
+auto: true
 permalink: /:year/:month/:day/:title
 exclude:
+  CONFIG.md
+  Gemfile
+  Gemfile.lock
   README.md
