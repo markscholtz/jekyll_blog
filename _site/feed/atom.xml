@@ -4,13 +4,34 @@
  <title>markscholtz.com</title>
  <link href="http://markscholtz.com/feed/atom.xml" rel="self"/>
  <link href="http://markscholtz.com/"/>
- <updated>2012-05-22T18:04:36+02:00</updated>
+ <updated>2012-08-11T18:35:43+02:00</updated>
  <id>http://markscholtz.com/</id>
  <author>
    <name>Mark Scholtz</name>
    <email>message@markscholtz.com</email>
  </author>
 
+ 
+ <entry>
+
+   
+   <title>INCONSOLATA</title>
+   
+   <link href="http://markscholtz.com/2012/08/11/new_programming_font"/>
+   <updated>2012-08-11T00:00:00+02:00</updated>
+   <id>http://markscholtz.com/2012/08/11/new_programming_font</id>
+   <content type="html">&lt;p&gt;I&amp;#8217;m currently sitting on a rocking chair, staring out the window at an overcast and drizzly Cape Town winter&amp;#8217;s day having just gone through the trauma of experiencing a storm with lightening, thunder and even some hail! Actually, the distress continues (this storm is not over), however, it&amp;#8217;s probably expected behaviour in such situations to be brave and forge on. And forge on I shall, but to calm myself down in this predicament a soothing cup of rooibos tea with honey and a session at the terminal pimping my vim setup is in order.&lt;/p&gt;
+
+&lt;p&gt;First a new programming font is required. Why? Because I read about one whilst doing something else and became immediately distracted. No doubt a font was found and installed thanks to &lt;a href='http://benjamin.org/dan/'&gt;Dan Benjamin&amp;#8217;s&lt;/a&gt; &lt;a href='http://hivelogic.com/articles/top-10-programming-fonts/'&gt;Hivelogic&lt;/a&gt; blog. I&amp;#8217;m saddened that I can&amp;#8217;t get hold of Consolas (Dan&amp;#8217;s number 2 choice) as it was my favourite programming font on Windows, but &lt;a href='http://www.levien.com/type/myfonts/inconsolata.html'&gt;Inconsolata&lt;/a&gt; is great too and a worthy substitute!&lt;/p&gt;
+
+&lt;p&gt;Aah that&amp;#8217;s better. Nerves are definitely feeling less jangly and tender, although what is really needed for blissful, Saturday afternoon, procrastination nirvana is a new vim plugin and I think I stumbled across just the one - &lt;a href='https://github.com/Lokaltog/vim-powerline/'&gt;vim-powerline&lt;/a&gt;. Vim-powerline provides you with a nicer looking, more functional statusline. If that explanation doesn&amp;#8217;t get the juices flowing, the &lt;a href='https://github.com/Lokaltog/vim-powerline/blob/develop/README.rst'&gt;documentation&lt;/a&gt; on Github certainly will and is where you want to look for more comprehensive details on the plugin&amp;#8217;s abilities.&lt;/p&gt;
+
+&lt;p&gt;Finally I felt like I needed to revisit another plugin - &lt;a href='https://github.com/tpope/vim-rails'&gt;vim-rails&lt;/a&gt;. This one a classic from the legendary Vim plugin creator &lt;a href='http://tbaggery.com/'&gt;Tim Pope&lt;/a&gt;. I was missing the enhanced project navigation that this plugin enables with just one command :Rtags. With the help of &lt;a href='http://ctags.sourceforge.net/'&gt;exuberant ctags&lt;/a&gt; this command generates a tags file that Vim uses to allow quick jumping between different aspects of your code base. As an example, hitting ctrl-] with your cursor over a method call will take you to its definition. That is just the iceberg of what this plugin can do, so if you are a Rails developer go and install it and give some of its other features a try.&lt;/p&gt;
+
+&lt;p&gt;Alright, I imagine that&amp;#8217;s probably enough for now as you are once again breathing normally. Possibly the shallow breaths of someone sleeping? If not, you might want to take a closer look at my &lt;a href='https://github.com/markscholtz/dotfiles/tree/master/vim'&gt;Vim configuration&lt;/a&gt; which you can find on Github amongst my other dotfiles.&lt;/p&gt;
+
+&lt;p&gt;I hope you feel relaxed.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
 
