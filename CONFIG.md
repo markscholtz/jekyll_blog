@@ -10,6 +10,9 @@ file.
 After modification do the following in order to generate the social icons
 sprite:
 
- * Use Image -> Channel Mixer... menu item to get the unhighlighted colour
-   right.
- * Use Share -> Export for Web... to generate a png sprite image.
+ * To modify the unhighlighted icon's colour
+   * Open up the Effects Browser (command-3)
+   * select "Color Adjustments" from the effects dropdown
+   * Drag the "Channels" effect onto the desired layer
+ * To generate a png sprite image
+   * Use Share -> Export for Web...
