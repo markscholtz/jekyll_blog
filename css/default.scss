@@ -124,7 +124,37 @@ div#main_site_content {
     .colophon {
       padding-top: 2px;
     }
+    .rss {
+      a {
+        &:hover .icon-rss {
+          color: $orange;
+        }
+      }
+      ul {
+        padding-top: 10px;
+      }
+    }
     .social {
+      a {
+        &:hover .icon-envelope {
+          color: $light_green;
+        }
+        &:hover .icon-twitter {
+          color: $blue;
+        }
+        &:hover .icon-facebook {
+          color: $red;
+        }
+        &:hover .icon-google-plus {
+          color: $green;
+        }
+        &:hover .icon-linkedin {
+          color: $hot_pink;
+        }
+        &:hover .icon-github {
+          color: $purple;
+        }
+      }
       ul {
         padding: 10px 0;
       }
@@ -148,57 +178,5 @@ div#main_site_content {
       text-indent: 40px;
       padding-top: 6px;
     }
-
-    #rss_button {
-      background-position: 0px 0px;
-      &:hover {
-        background-position: -32px 0px;
-      }
-    }
-
-    #email_button {
-      background-position: 0px -32px;
-      &:hover {
-        background-position: -32px -32px;
-      }
-    }
-
-    #twitter_button {
-      background-position: 0px -128px;
-      &:hover {
-        background-position: -32px -128px;
-      }
-    }
-
-    #facebook_button {
-      background-position: 0px -192px;
-      &:hover {
-        background-position: -32px -192px;
-      }
-    }
-
-    #google_plus_button {
-      background-position: 0px -96px;
-      &:hover {
-        background-position: -32px -96px;
-      }
-    }
-
-    #linkedin_button {
-      background-position: 0px -160px;
-      &:hover {
-        background-position: -32px -160px;
-      }
-    }
-
-    #github_button {
-      background-position: 0px -64px;
-      &:hover {
-        background-position: -32px -64px;
-      }
-    }
   }
-
 }
-
-
