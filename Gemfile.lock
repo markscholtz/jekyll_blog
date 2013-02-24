@@ -17,6 +17,7 @@ GEM
     rack-jekyll (0.3.7)
       jekyll (~> 0.6.2)
       rack (~> 1.2.1)
+    sass (3.2.5)
     syntax (1.0.0)
 
 PLATFORMS
@@ -24,3 +25,4 @@ PLATFORMS
 
 DEPENDENCIES
   rack-jekyll
+  sass
