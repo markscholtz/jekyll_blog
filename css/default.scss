@@ -130,6 +130,12 @@ div#main_site_content {
       }
       li {
         padding: 4px 0;
+        a {
+          line-height: 26px;
+          i {
+            padding-top: 4px;
+          }
+        }
       }
     }
 
