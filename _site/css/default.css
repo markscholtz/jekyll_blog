@@ -20,6 +20,7 @@ ol, ul {
   list-style: none; }
 
 /* Colours */
+/* Font Colours */
 /* Padding and Borders */
 /* html5 styling */
 header, nav, section, aside, footer, article {
@@ -163,10 +164,30 @@ div#main_site_content {
       padding: 0 0 0 10px; }
     div#main_site_content .secondary_content .colophon {
       padding-top: 2px; }
+    div#main_site_content .secondary_content .rss a:hover .icon-rss {
+      color: #be5222; }
+    div#main_site_content .secondary_content .rss ul {
+      padding-top: 10px; }
+    div#main_site_content .secondary_content .social a:hover .icon-envelope {
+      color: #00ccbb; }
+    div#main_site_content .secondary_content .social a:hover .icon-twitter {
+      color: #3481c9; }
+    div#main_site_content .secondary_content .social a:hover .icon-facebook {
+      color: #b12427; }
+    div#main_site_content .secondary_content .social a:hover .icon-google-plus {
+      color: #8b9d36; }
+    div#main_site_content .secondary_content .social a:hover .icon-linkedin {
+      color: #ff4b6e; }
+    div#main_site_content .secondary_content .social a:hover .icon-github {
+      color: #676ac0; }
     div#main_site_content .secondary_content .social ul {
       padding: 10px 0; }
     div#main_site_content .secondary_content .social li {
       padding: 4px 0; }
+      div#main_site_content .secondary_content .social li a {
+        line-height: 26px; }
+        div#main_site_content .secondary_content .social li a i {
+          padding-top: 4px; }
     div#main_site_content .secondary_content .button {
       background-image: url(../images/social/social_icons.png);
       background-repeat: no-repeat;
@@ -175,31 +196,3 @@ div#main_site_content {
       display: block;
       text-indent: 40px;
       padding-top: 6px; }
-    div#main_site_content .secondary_content #rss_button {
-      background-position: 0px 0px; }
-      div#main_site_content .secondary_content #rss_button:hover {
-        background-position: -32px 0px; }
-    div#main_site_content .secondary_content #email_button {
-      background-position: 0px -32px; }
-      div#main_site_content .secondary_content #email_button:hover {
-        background-position: -32px -32px; }
-    div#main_site_content .secondary_content #twitter_button {
-      background-position: 0px -128px; }
-      div#main_site_content .secondary_content #twitter_button:hover {
-        background-position: -32px -128px; }
-    div#main_site_content .secondary_content #facebook_button {
-      background-position: 0px -192px; }
-      div#main_site_content .secondary_content #facebook_button:hover {
-        background-position: -32px -192px; }
-    div#main_site_content .secondary_content #google_plus_button {
-      background-position: 0px -96px; }
-      div#main_site_content .secondary_content #google_plus_button:hover {
-        background-position: -32px -96px; }
-    div#main_site_content .secondary_content #linkedin_button {
-      background-position: 0px -160px; }
-      div#main_site_content .secondary_content #linkedin_button:hover {
-        background-position: -32px -160px; }
-    div#main_site_content .secondary_content #github_button {
-      background-position: 0px -64px; }
-      div#main_site_content .secondary_content #github_button:hover {
-        background-position: -32px -64px; }
