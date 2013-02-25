@@ -5,4 +5,5 @@ exclude:
   CONFIG.md
   Gemfile
   Gemfile.lock
+  Procfile
   README.md
