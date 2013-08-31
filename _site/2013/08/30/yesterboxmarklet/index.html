@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>markscholtz.com</title>
+    <link rel="stylesheet" href="/css/default.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/css/font-awesome.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" charset="utf-8">
+    <!-- All JavaScript at the bottom, except for html5shiv which enables HTML5 elements & feature detects -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if !IE 7]>
+      <style type="text/css">
+        #wrap {display:table;height:100%}
+      </style>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="site_header">
+        <h1>
+          <a href="http://markscholtz.com">
+            mark<span id="scholtz_span">scholtz</span>.<span>com</span>
+          </a>
+        </h1>
+      </header>
+      <div id="main_site_content">
+        <div class="primary_content">
+          <div>
+  <header class="article_header">
+    <a href="">
+      <h1>Yesterboxmarklet</h1>
+      
+    </a>
+    <div id="post_date">Friday 30 August 2013</div>
+  </header>
+  <article>
+    <div>
+      <p>Recently I read an article about a <a href='http://yesterbox.com/'>somewhat curious approach to managing your email inbox</a> dubbed Yesterbox (via <a href='http://simplicitybliss.com/2013/06/mastering-email-with-the-yesterbox-technique/'>SimplicityBliss</a>). I found it intriguing, but a difficult process to emulate in Gmail. There is no convenient way to view yesterday&#8217;s emails without performing a custom advanced search each time you want to view your Yesterbox.</p>
+
+<p>I performed a cursory search to find a solution native to Gmail, but without luck, so I tried the first approach to fixing the problem that came to mind: I wrote a bookmarklet for <a href='javascript: (function () { var jsCode = document.createElement(&apos;script&apos;); jsCode.setAttribute(&apos;src&apos;, &apos;http://markscholtz.com/js/yesterbox.js&apos;); document.body.appendChild(jsCode); }());' title='Yesterbox'>Yesterbox</a> that filters your email so that you have a view of yesterday&#8217;s emails only.</p>
+
+<p>Try clicking <a href='javascript: (function () { var jsCode = document.createElement(&apos;script&apos;); jsCode.setAttribute(&apos;src&apos;, &apos;http://markscholtz/js/yesterbox.js&apos;); document.body.appendChild(jsCode); }());' title='Yesterbox'>Y // Javascript uses a zero based index for months.esterbox</a> to test it out (you need to be logged in to Gmail for it to work). If you like it drag it up to your bookmarks bar to save it permanently. Give it a click. If all goes well, voila! Yesterbox in Gmail!</p>
+
+<p>Disclaimer: I&#8217;ve only tested this in the latest version of Chrome on OS X. It&#8217;s not perfect and has a few issues. For example it doesn&#8217;t seem to work from a new Chrome tab. Any feedback or bug reports welcome.</p>
+<div class='code-header'>Yesterbox</div><div class='highlight'><pre><code class='javascript'><span class='lineno'> 1</span>   <span class='nx'>javascript</span><span class='o'>:</span> <span class='p'>(</span><span class='kd'>function</span> <span class='p'>()</span> <span class='p'>{</span>
+<span class='lineno'> 2</span>     <span class='kd'>var</span> <span class='nx'>now</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nb'>Date</span><span class='p'>();</span>
+<span class='lineno'> 3</span> 
+<span class='lineno'> 4</span>     <span class='kd'>var</span> <span class='nx'>year</span> <span class='o'>=</span> <span class='nx'>now</span><span class='p'>.</span><span class='nx'>getFullYear</span><span class='p'>();</span>
+<span class='lineno'> 5</span>     <span class='kd'>var</span> <span class='nx'>month</span> <span class='o'>=</span> <span class='p'>(</span><span class='nx'>now</span><span class='p'>.</span><span class='nx'>getMonth</span><span class='p'>()</span> <span class='o'>+</span> <span class='mi'>1</span><span class='p'>);</span> <span class='c1'>// Javascript uses a zero based index for months.</span>
+<span class='lineno'> 6</span>     <span class='kd'>var</span> <span class='nx'>day</span> <span class='o'>=</span> <span class='nx'>now</span><span class='p'>.</span><span class='nx'>getDate</span><span class='p'>();</span>
+<span class='lineno'> 7</span> 
+<span class='lineno'> 8</span>     <span class='kd'>var</span> <span class='nx'>today</span> <span class='o'>=</span> <span class='nx'>year</span> <span class='o'>+</span> <span class='s2'>&quot;/&quot;</span> <span class='o'>+</span> <span class='nx'>month</span> <span class='o'>+</span> <span class='s2'>&quot;/&quot;</span> <span class='o'>+</span> <span class='nx'>day</span><span class='p'>;</span>
+<span class='lineno'> 9</span>     <span class='kd'>var</span> <span class='nx'>yesterday</span> <span class='o'>=</span> <span class='nx'>year</span> <span class='o'>+</span> <span class='s2'>&quot;/&quot;</span> <span class='o'>+</span> <span class='nx'>month</span> <span class='o'>+</span> <span class='s2'>&quot;/&quot;</span> <span class='o'>+</span> <span class='p'>(</span><span class='nx'>day</span> <span class='o'>-</span> <span class='mi'>1</span><span class='p'>)</span>
+<span class='lineno'>10</span> 
+<span class='lineno'>11</span>     <span class='kd'>var</span> <span class='nx'>yesterbox</span> <span class='o'>=</span> <span class='s2'>&quot;https://mail.google.com/mail/u/0/?ui=2&amp;shva=1#search/after&quot;</span><span class='p'>;</span>
+<span class='lineno'>12</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='nb'>encodeURIComponent</span><span class='p'>(</span><span class='s2'>&quot;:&quot;</span> <span class='o'>+</span> <span class='nx'>yesterday</span><span class='p'>);</span>
+<span class='lineno'>13</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='s2'>&quot;+before&quot;</span><span class='p'>;</span>
+<span class='lineno'>14</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='nb'>encodeURIComponent</span><span class='p'>(</span><span class='s2'>&quot;:&quot;</span> <span class='o'>+</span> <span class='nx'>today</span><span class='p'>);</span>
+<span class='lineno'>15</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='s2'>&quot;+label&quot;</span>
+<span class='lineno'>16</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='nb'>encodeURIComponent</span><span class='p'>(</span><span class='s2'>&quot;:inbox&quot;</span><span class='p'>);</span>
+<span class='lineno'>17</span> 
+<span class='lineno'>18</span>     <span class='nb'>window</span><span class='p'>.</span><span class='nx'>location</span><span class='p'>.</span><span class='nx'>href</span> <span class='o'>=</span> <span class='nx'>yesterbox</span><span class='p'>;</span>
+<span class='lineno'>19</span>   <span class='p'>})();</span>
+<span class='lineno'>20</span> 
+<span class='lineno'>21</span>   <span class='nx'>javascript</span><span class='o'>:</span> <span class='p'>(</span><span class='kd'>function</span> <span class='p'>()</span> <span class='p'>{</span>
+<span class='lineno'>22</span>     <span class='kd'>var</span> <span class='nx'>jsCode</span> <span class='o'>=</span> <span class='nb'>document</span><span class='p'>.</span><span class='nx'>createElement</span><span class='p'>(</span><span class='s1'>&#39;script&#39;</span><span class='p'>);</span>
+<span class='lineno'>23</span>     <span class='nx'>jsCode</span><span class='p'>.</span><span class='nx'>setAttribute</span><span class='p'>(</span><span class='s1'>&#39;src&#39;</span><span class='p'>,</span> <span class='s1'>&#39;http://markscholtz.com/&#39;</span><span class='p'>);</span>
+<span class='lineno'>24</span>     <span class='nb'>document</span><span class='p'>.</span><span class='nx'>body</span><span class='p'>.</span><span class='nx'>appendChild</span><span class='p'>(</span><span class='nx'>jsCode</span><span class='p'>);</span>
+<span class='lineno'>25</span>   <span class='p'>}());</span>
+</code></pre></div>
+    </div>
+  </article>
+</div>
+
+        </div>
+        <div class="secondary_content">
+          <div class="colophon">
+            <h2>
+              Hi, I'm Mark
+            </h2>
+            <p>
+              I'm a developer from Cape Town and this is my blog, a little
+              corner of the internet all of my own. It's not very cosy yet, but
+              it's getting there.
+            </p>
+            <p>
+              I'm a latecomer to the wonders of Rails, a student of Ruby, an
+              agile proponent, a lover of all things web, an Apple enthusiast
+              and, occasionally, a runner.
+            </p>
+          </div>
+          <div class="rss">
+            <h2>
+              Subscribe
+            </h2>
+            <ul>
+              <li>
+                <a href="http://feeds.feedburner.com/markscholtz">
+                  <i class="icon-rss icon-2x"></i> <span>rss</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="social">
+            <h2>
+              Connect
+            </h2>
+            <ul>
+              <li>
+                <a href="mailto:mark@markscholtz.com">
+                  <i class="icon-envelope icon-2x"></i> <span>email</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/markscholtz">
+                  <i class="icon-twitter icon-2x"></i> <span>twitter</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/markscholtz">
+                  <i class="icon-facebook icon-2x"></i> <span>facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/104848639023894611373/posts">
+                  <i class="icon-google-plus icon-2x"></i> <span>google+</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://za.linkedin.com/in/markscholtz">
+                  <i class="icon-linkedin icon-2x"></i> <span>linkedin</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/markscholtz">
+                  <i class="icon-github icon-2x"></i> <span>github</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="site_footer">
+    </footer>
+  </body>
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>-->
+  <!--<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.6.1.min.js"%3E%3C/script%3E'))</script>-->
+
+
+  <!-- Add Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20783307-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</html>
