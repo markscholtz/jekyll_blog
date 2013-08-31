@@ -36,13 +36,44 @@
     <div id="post_date">Friday 30 August 2013</div>
   </header>
   <article>
-    <p>Recently I read an article about a <a href='http://yesterbox.com/'>somewhat curious approach to managing your email inbox</a> dubbed Yesterbox (via <a href='http://simplicitybliss.com/2013/06/mastering-email-with-the-yesterbox-technique/'>SimplicityBliss</a>). I found it intriguing, but a difficult process to emulate in Gmail. There is no convenient way to view yesterday&#8217;s emails without performing a custom advanced search each time you want to view your Yesterbox.</p>
+    <p>Recently I read an article about a <a href='http://yesterbox.com/'>somewhat curious approach to managing your email inbox</a> dubbed <a href='http://yesterbox.com/'>Yesterbox</a> (via <a href='http://simplicitybliss.com/2013/06/mastering-email-with-the-yesterbox-technique/'>SimplicityBliss</a>).</p>
 
-<p>I performed a cursory search to find a solution native to Gmail, but without luck, so I tried the first approach to fixing the problem that came to mind: I wrote a bookmarklet for <a href='javascript: (function () { var jsCode = document.createElement(&apos;script&apos;); jsCode.setAttribute(&apos;src&apos;, &apos;http://markscholtz.com/js/yesterbox.js&apos;); document.body.appendChild(jsCode); }());' title='Yesterbox'>Yesterbox</a> that filters your email so that you have a view of yesterday&#8217;s emails only.</p>
+<p>The concept, as summed up by Tony Hsieh, Yesterbox&#8217;s creator, is simple yet powerful:</p>
 
-<p>Try clicking <a href='javascript: (function () { var jsCode = document.createElement(&apos;script&apos;); jsCode.setAttribute(&apos;src&apos;, &apos;http://markscholtz/js/yesterbox.js&apos;); document.body.appendChild(jsCode); }());' title='Yesterbox'>Yesterbox</a> to test it out (you need to be logged in to Gmail for it to work). If you like it drag it up to your bookmarks bar to save it permanently. Give it a click. If all goes well, voila! Yesterbox in Gmail!</p>
+<blockquote>
+<p>each day your to do list is yesterday&#8217;s inbox instead of today&#8217;s inbox</p>
+</blockquote>
+
+<p>Now you have a finite list of emails to reply to each day :)</p>
+
+<p>It sounded intriguing so I thought I would give it a try. It quickly became apparent, however, that it would be difficult to emulate in Gmail (my email client of choice) as there is no convenient way to view yesterday&#8217;s emails without performing a custom advanced search each time you want to view your Yesterbox.</p>
+
+<p>The closest I managed to get was to perform an advanced search, filtering by &#8220;Date within 1 day of yesterday&#8221;. Unfortunately this resulted in emails from the day before and after yesterday being included in the search results.</p>
+<div class='article-image'>
+  <img alt='Desired search' src='/images/posts/2013-08-30-yesterboxmarklet/desired-search.png' />
+  <div class='article-image-caption'>
+    The search I wanted to perform with Gmail's advanced search
+  </div>
+</div><div class='article-image'>
+  <img alt='Closest search' src='/images/posts/2013-08-30-yesterboxmarklet/closest-search.png' />
+  <div class='article-image-caption'>
+    The closest, actual search I could perform using Gmail's advanced search interface
+  </div>
+</div>
+<p>I performed a cursory search on the internet to find a solution native to Gmail, but without luck, so I tried the first approach to fixing the problem that came to mind: I wrote a <a href='javascript: (function () { var jsCode =
+document.createElement(&apos;script&apos;); jsCode.setAttribute(&apos;src&apos;,
+&apos;http://markscholtz.com/js/bookmarklets/yesterbox.js&apos;);
+document.body.appendChild(jsCode); }());' title='Yesterbox'> bookmarklet for
+Yesterbox </a> that filters your email so that you have a view of yesterday&#8217;s emails only.</p>
+
+<p>Try clicking <a href='javascript: (function () { var jsCode =
+document.createElement(&apos;script&apos;); jsCode.setAttribute(&apos;src&apos;,
+&apos;http://markscholtz/js/bookmarklets/yesterbox.js&apos;);
+document.body.appendChild(jsCode); }());' title='Yesterbox'>Yesterbox</a> to test it out (you need to be logged in to Gmail for it to work). If you like it the results and want to try out Yesterbox, drag the bookmarklet link up to your bookmarks bar to save it permanently. Give it a click. If all goes well, voila! Yesterbox in Gmail!</p>
 
 <p>Disclaimer: I&#8217;ve only tested this in the latest version of Chrome on OS X. It&#8217;s not perfect and has a few issues. For example it doesn&#8217;t seem to work from a new Chrome tab. Any feedback or bug reports welcome.</p>
+
+<p>And here is the code for those interested:</p>
 <div class='code-header'>Yesterbox</div><div class='highlight'><pre><code class='javascript'><span class='lineno'> 1</span>   <span class='nx'>javascript</span><span class='o'>:</span> <span class='p'>(</span><span class='kd'>function</span> <span class='p'>()</span> <span class='p'>{</span>
 <span class='lineno'> 2</span>     <span class='kd'>var</span> <span class='nx'>now</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nb'>Date</span><span class='p'>();</span>
 <span class='lineno'> 3</span> 
