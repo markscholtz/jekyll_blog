@@ -44,12 +44,12 @@ what I wanted.
 </div>
 
 <p>
-I then performed a cursory search on the internet to find a solution native to
-Gmail, but without luck. The first approach to fixing the problem that came to
-mind was writing a bookmarklet. So I did that. I like to call it
-<a href="javascript:window.open('http://markscholtz.com/yesterboxmarklet.html');void(0)" title="Yesterboxmarklet">Yesterboxmarklet</a>,
-a bookmarklet that filters your email in Gmail so that you have a view of
-yesterday's emails only.
+  I then performed a cursory search on the internet to find a solution native to
+  Gmail, but without luck. The first approach to fixing the problem that came to
+  mind was writing a bookmarklet. So I did that. I like to call it
+  <a href="javascript:window.open('http://markscholtz.com/yesterboxmarklet.html');void(0)" title="Yesterboxmarklet">Yesterboxmarklet</a>,
+  a bookmarklet that filters your email in Gmail so that you have a view of
+  yesterday's emails only.
 </p>
 
 Try clicking
@@ -59,15 +59,17 @@ the results and want to try out the Yesterbox approach for a while to see if it
 suits you, drag the bookmarklet link up to your browser's bookmarks bar to save
 it permanently. Give it a click. If all goes well, voila!  Yesterbox in Gmail!
 
-*Disclaimer*: I've only tested this on the latest versions of Chrome, Safari
-and Firefox on OS X. It's not perfect and has a few issues. For example,
-searches on the first day of the month work, but the "after" day in the date
-filter is 0, not 1. It also doesn't work on Chrome's new tab page, which is a
-result of security measures put in place by the Chrome team. Also, this
-bookmarklet went through many iterations and was more a pain to write than I
-thought.  Currently it just opens a new window pointing to a page on this site
-that runs the below code. Any feedback on this approach or bug reports are most
-welcome.
+<p class="disclaimer">
+  <em>Disclaimer</em>: I've only tested this on the latest versions of Chrome, Safari
+  and Firefox on OS X. It's not perfect and has a few issues. For example,
+  searches on the first day of the month work, but the "after" day in the date
+  filter is 0, not 1. It also doesn't work on Chrome's new tab page, which is a
+  result of security measures put in place by the Chrome team. Also, this
+  bookmarklet went through many iterations and was more a pain to write than I
+  thought.  Currently it just opens a new window pointing to a page on this
+  site that runs the below code. Any feedback on this approach or bug reports
+  are most welcome.
+</p>
 
 <div class="code-header">Yesterbox</div>
 {% highlight javascript linenos %}
