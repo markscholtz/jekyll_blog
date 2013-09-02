@@ -4,13 +4,87 @@
  <title>markscholtz.com</title>
  <link href="http://markscholtz.com/feed/atom.xml" rel="self"/>
  <link href="http://markscholtz.com/"/>
- <updated>2012-08-11T18:56:37+02:00</updated>
+ <updated>2013-09-02T22:23:17+02:00</updated>
  <id>http://markscholtz.com/</id>
  <author>
    <name>Mark Scholtz</name>
    <email>message@markscholtz.com</email>
  </author>
 
+ 
+ <entry>
+
+   
+   <title>Yesterboxmarklet</title>
+   
+   <link href="http://markscholtz.com/2013/09/02/yesterboxmarklet"/>
+   <updated>2013-09-02T00:00:00+02:00</updated>
+   <id>http://markscholtz.com/2013/09/02/yesterboxmarklet</id>
+   <content type="html">&lt;p&gt;Recently I read an article about a &lt;a href='http://yesterbox.com/'&gt;somewhat curious approach to managing your email inbox&lt;/a&gt; dubbed &lt;a href='http://yesterbox.com/'&gt;Yesterbox&lt;/a&gt; (via &lt;a href='http://simplicitybliss.com/2013/06/mastering-email-with-the-yesterbox-technique/'&gt;SimplicityBliss&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;The concept, as summed up by Tony Hsieh, Yesterbox&amp;#8217;s creator, is simple yet powerful:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;each day your to do list is yesterday&amp;#8217;s inbox instead of today&amp;#8217;s inbox&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Excellent, a finite list of emails to reply to each day :)&lt;/p&gt;
+
+&lt;p&gt;This idea sounded intriguing to me, so I thought I would give it a try. It quickly became apparent, however, that it would be difficult to emulate in Gmail (my email client of choice) as there is no convenient way to view yesterday&amp;#8217;s emails without performing a custom advanced search each time you want to view your Yesterbox.&lt;/p&gt;
+
+&lt;p&gt;The closest I managed to get was to perform an advanced search, filtering by &amp;#8220;Date within 1 day of yesterday&amp;#8221;. Unfortunately this resulted in emails from the day before and after yesterday being included in the search results. Not what I wanted.&lt;/p&gt;
+&lt;div class='article-image'&gt;
+  &lt;img alt='Desired search' src='/images/posts/2013-09-02-yesterboxmarklet/desired-search.png' /&gt;
+  &lt;div class='article-image-caption'&gt;
+    The search I wanted to perform with Gmail's advanced search
+  &lt;/div&gt;
+&lt;/div&gt;&lt;div class='article-image'&gt;
+  &lt;img alt='Closest search' src='/images/posts/2013-09-02-yesterboxmarklet/closest-search.png' /&gt;
+  &lt;div class='article-image-caption'&gt;
+    The closest, actual search I could perform using Gmail's advanced search
+    interface, which seems to actually be buggy
+  &lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;
+  I then performed a cursory search on the internet to find a solution native to
+  Gmail, but without luck. The first approach to fixing the problem that came to
+  mind was writing a bookmarklet. So I did that. I like to call it
+  &lt;a href='javascript:window.open(&amp;apos;http://markscholtz.com/yesterboxmarklet.html&amp;apos;);void(0)' title='Yesterboxmarklet'&gt;Yesterboxmarklet&lt;/a&gt;,
+  a bookmarklet that filters your email in Gmail so that you have a view of
+  yesterday's emails only.
+&lt;/p&gt;
+&lt;p&gt;Try clicking &lt;a href='javascript:window.open(&amp;apos;http://markscholtz.com/yesterboxmarklet.html&amp;apos;);void(0)' title='Yesterboxmarklet'&gt;Yesterboxmarklet&lt;/a&gt; to test it out (you need to be logged in to Gmail for it to work). If you like the results and want to try out the Yesterbox approach for a while to see if it suits you, drag the bookmarklet link up to your browser&amp;#8217;s bookmarks bar to save it permanently. Give it a click. If all goes well, voila! Yesterbox in Gmail!&lt;/p&gt;
+&lt;p class='disclaimer'&gt;
+  &lt;em&gt;Disclaimer&lt;/em&gt;: I've only tested this on the latest versions of Chrome, Safari
+  and Firefox on OS X. It's not perfect and has a few issues. For example,
+  searches on the first day of the month work, but the &quot;after&quot; day in the date
+  filter is 0, not 1. It also doesn't work on Chrome's new tab page, which is a
+  result of security measures put in place by the Chrome team. Also, this
+  bookmarklet went through many iterations and was more a pain to write than I
+  thought.  Currently it just opens a new window pointing to a page on this
+  site that runs the below code. Any feedback on this approach or bug reports
+  are most welcome.
+&lt;/p&gt;&lt;div class='code-header'&gt;Yesterbox&lt;/div&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='javascript'&gt;&lt;span class='lineno'&gt; 1&lt;/span&gt;   &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='kd'&gt;function&lt;/span&gt; &lt;span class='p'&gt;()&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+&lt;span class='lineno'&gt; 2&lt;/span&gt;     &lt;span class='kd'&gt;var&lt;/span&gt; &lt;span class='nx'&gt;now&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='k'&gt;new&lt;/span&gt; &lt;span class='nb'&gt;Date&lt;/span&gt;&lt;span class='p'&gt;();&lt;/span&gt;
+&lt;span class='lineno'&gt; 3&lt;/span&gt; 
+&lt;span class='lineno'&gt; 4&lt;/span&gt;     &lt;span class='kd'&gt;var&lt;/span&gt; &lt;span class='nx'&gt;year&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nx'&gt;now&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;getFullYear&lt;/span&gt;&lt;span class='p'&gt;();&lt;/span&gt;
+&lt;span class='lineno'&gt; 5&lt;/span&gt;     &lt;span class='kd'&gt;var&lt;/span&gt; &lt;span class='nx'&gt;month&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nx'&gt;now&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;getMonth&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt; &lt;span class='c1'&gt;// Javascript uses a zero based index for months.&lt;/span&gt;
+&lt;span class='lineno'&gt; 6&lt;/span&gt;     &lt;span class='kd'&gt;var&lt;/span&gt; &lt;span class='nx'&gt;day&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nx'&gt;now&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;getDate&lt;/span&gt;&lt;span class='p'&gt;();&lt;/span&gt;
+&lt;span class='lineno'&gt; 7&lt;/span&gt; 
+&lt;span class='lineno'&gt; 8&lt;/span&gt;     &lt;span class='kd'&gt;var&lt;/span&gt; &lt;span class='nx'&gt;today&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nx'&gt;year&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;/&amp;quot;&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='nx'&gt;month&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;/&amp;quot;&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='nx'&gt;day&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+&lt;span class='lineno'&gt; 9&lt;/span&gt;     &lt;span class='kd'&gt;var&lt;/span&gt; &lt;span class='nx'&gt;yesterday&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nx'&gt;year&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;/&amp;quot;&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='nx'&gt;month&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;/&amp;quot;&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nx'&gt;day&lt;/span&gt; &lt;span class='o'&gt;-&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+&lt;span class='lineno'&gt;10&lt;/span&gt; 
+&lt;span class='lineno'&gt;11&lt;/span&gt;     &lt;span class='kd'&gt;var&lt;/span&gt; &lt;span class='nx'&gt;yesterbox&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;https://mail.google.com/mail/u/0/?ui=2&amp;amp;shva=1#search/&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+&lt;span class='lineno'&gt;12&lt;/span&gt;     &lt;span class='nx'&gt;yesterbox&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;+in&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+&lt;span class='lineno'&gt;13&lt;/span&gt;     &lt;span class='nx'&gt;yesterbox&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='nb'&gt;encodeURIComponent&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;:inbox&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+&lt;span class='lineno'&gt;14&lt;/span&gt;     &lt;span class='nx'&gt;yesterbox&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;+after&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+&lt;span class='lineno'&gt;15&lt;/span&gt;     &lt;span class='nx'&gt;yesterbox&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='nb'&gt;encodeURIComponent&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;:&amp;quot;&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='nx'&gt;yesterday&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+&lt;span class='lineno'&gt;16&lt;/span&gt;     &lt;span class='nx'&gt;yesterbox&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;+before&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+&lt;span class='lineno'&gt;17&lt;/span&gt;     &lt;span class='nx'&gt;yesterbox&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='nb'&gt;encodeURIComponent&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;:&amp;quot;&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='nx'&gt;today&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+&lt;span class='lineno'&gt;18&lt;/span&gt; 
+&lt;span class='lineno'&gt;19&lt;/span&gt;     &lt;span class='nb'&gt;window&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;location&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;href&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nx'&gt;yesterbox&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+&lt;span class='lineno'&gt;20&lt;/span&gt;   &lt;span class='p'&gt;})();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
  
  <entry>
 

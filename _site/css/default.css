@@ -146,6 +146,9 @@ div#main_site_content {
       text-align: left; }
       div#main_site_content .primary_content article p {
         font-size: 1.05em; }
+      div#main_site_content .primary_content article p.disclaimer {
+        font-size: 0.9em;
+        padding-top: 30px; }
       div#main_site_content .primary_content article h2 {
         font-size: 1.5em;
         padding-left: 5px;
