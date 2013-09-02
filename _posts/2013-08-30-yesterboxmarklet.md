@@ -15,15 +15,16 @@ powerful:
 
 Now you have a finite list of emails to reply to each day :)
 
-It sounded intriguing so I thought I would give it a try. It quickly became
-apparent, however, that it would be difficult to emulate in Gmail (my email
-client of choice) as there is no convenient way to view yesterday's emails
-without performing a custom advanced search each time you want to view your
-Yesterbox.
+This idea sounded intriguing to me, so I thought I would give it a try. It
+quickly became apparent, however, that it would be difficult to emulate in
+Gmail (my email client of choice) as there is no convenient way to view
+yesterday's emails without performing a custom advanced search each time you
+want to view your Yesterbox.
 
 The closest I managed to get was to perform an advanced search, filtering by
 "Date within 1 day of yesterday". Unfortunately this resulted in emails from
-the day before and after yesterday being included in the search results.
+the day before and after yesterday being included in the search results. Not
+what I wanted.
 
 <div class="article-image">
   <img alt="Desired search"
@@ -37,37 +38,38 @@ the day before and after yesterday being included in the search results.
   <img alt="Closest search"
        src="/images/posts/2013-08-30-yesterboxmarklet/closest-search.png">
   <div class="article-image-caption">
-    The closest, actual search I could perform using Gmail's advanced search interface
+    The closest, actual search I could perform using Gmail's advanced search interface which seems to actually be buggy
   </div>
 </div>
 
-I performed a cursory search on the internet to find a solution native to
-Gmail, but without luck, so I tried the first approach to fixing the problem
-that came to mind: I wrote a <a href="javascript: (function () { var jsCode =
-document.createElement('script'); jsCode.setAttribute('src',
-'http://markscholtz.com/js/bookmarklets/yesterbox.js');
-document.body.appendChild(jsCode); }());" title="Yesterbox"> bookmarklet for
-Yesterbox </a> that filters your email so that you have a view of yesterday's
-emails only.
+<p>
+I then performed a cursory search on the internet to find a solution native to
+Gmail, but without luck. The first approach to fixing the problem that came to
+mind was writing a bookmarklet. So I did that. I like to call it
+<a href="javascript:window.open('http://markscholtz.com/yesterboxmarklet.html');void(0)" title="Yesterboxmarklet">Yesterboxmarklet</a>,
+a bookmarklet that filters your email in Gmail so that you have a view of
+yesterday's emails only.
+</p>
 
-Try clicking <a href="javascript: (function () { var jsCode =
-document.createElement('script'); jsCode.setAttribute('src',
-'http://markscholtz/js/bookmarklets/yesterbox.js');
-document.body.appendChild(jsCode); }());" title="Yesterbox">Yesterbox</a> to
-test it out (you need to be logged in to Gmail for it to work). If you like it
-the results and want to try out Yesterbox, drag the bookmarklet link up to your
-bookmarks bar to save it permanently. Give it a click. If all goes well, voila!
-Yesterbox in Gmail!
+Try clicking
+<a href="javascript:window.open('http://markscholtz.com/yesterboxmarklet.html');void(0)" title="Yesterboxmarklet">Yesterboxmarklet</a>
+to test it out (you need to be logged in to Gmail for it to work). If you like
+the results and want to try out the Yesterbox approach for a while to see if it
+suits you, drag the bookmarklet link up to your browser's bookmarks bar to save
+it permanently. Give it a click. If all goes well, voila!  Yesterbox in Gmail!
 
-Disclaimer: I've only tested this in the latest version of Chrome on OS X. It's
-not perfect and has a few issues. For example it doesn't seem to work from a
-new Chrome tab. Any feedback or bug reports welcome.
-
-And here is the code for those interested:
+*Disclaimer*: I've only tested this on the latest versions of Chrome, Safari
+and Firefox on OS X. It's not perfect and has a few issues. For example,
+searches on the first day of the month work, but the "after" day in the date
+filter is 0. It also doesn't work on Chrome's new tab page, which is a result
+of security measures put in place by the Chrome team. Also, this bookmarklet
+went through many iterations and was more a pain to write than I thought.
+Currently it just opens a new window pointing to a page on this site that runs
+the below code. Any feedback on this approach or bug reports are most welcome.
 
 <div class="code-header">Yesterbox</div>
 {% highlight javascript linenos %}
-  javascript: (function () {
+  (function () {
     var now = new Date();
 
     var year = now.getFullYear();
@@ -77,20 +79,15 @@ And here is the code for those interested:
     var today = year + "/" + month + "/" + day;
     var yesterday = year + "/" + month + "/" + (day - 1)
 
-    var yesterbox = "https://mail.google.com/mail/u/0/?ui=2&shva=1#search/after";
+    var yesterbox = "https://mail.google.com/mail/u/0/?ui=2&shva=1#search/";
+    yesterbox += "+in";
+    yesterbox += encodeURIComponent(":inbox");
+    yesterbox += "+after";
     yesterbox += encodeURIComponent(":" + yesterday);
     yesterbox += "+before";
     yesterbox += encodeURIComponent(":" + today);
-    yesterbox += "+label"
-    yesterbox += encodeURIComponent(":inbox");
 
     window.location.href = yesterbox;
   })();
-
-  javascript: (function () {
-    var jsCode = document.createElement('script');
-    jsCode.setAttribute('src', 'http://markscholtz.com/');
-    document.body.appendChild(jsCode);
-  }());
 {% endhighlight %}
 
