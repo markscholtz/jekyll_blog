@@ -29,11 +29,11 @@
         <div class="primary_content">
           
   <header class="article_header">
-    <a class="article_header_link" href="/2013/08/30/yesterboxmarklet">
+    <a class="article_header_link" href="/2013/09/02/yesterboxmarklet">
       <h1>Yesterboxmarklet</h1>
       
     </a>
-    <div id="post_date">Friday 30 August 2013</div>
+    <div id="post_date">Monday 02 September 2013</div>
   </header>
   <article>
     <p>Recently I read an article about a <a href='http://yesterbox.com/'>somewhat curious approach to managing your email inbox</a> dubbed <a href='http://yesterbox.com/'>Yesterbox</a> (via <a href='http://simplicitybliss.com/2013/06/mastering-email-with-the-yesterbox-technique/'>SimplicityBliss</a>).</p>
@@ -44,20 +44,21 @@
 <p>each day your to do list is yesterday&#8217;s inbox instead of today&#8217;s inbox</p>
 </blockquote>
 
-<p>Now you have a finite list of emails to reply to each day :)</p>
+<p>Excellent, a finite list of emails to reply to each day :)</p>
 
 <p>This idea sounded intriguing to me, so I thought I would give it a try. It quickly became apparent, however, that it would be difficult to emulate in Gmail (my email client of choice) as there is no convenient way to view yesterday&#8217;s emails without performing a custom advanced search each time you want to view your Yesterbox.</p>
 
 <p>The closest I managed to get was to perform an advanced search, filtering by &#8220;Date within 1 day of yesterday&#8221;. Unfortunately this resulted in emails from the day before and after yesterday being included in the search results. Not what I wanted.</p>
 <div class='article-image'>
-  <img alt='Desired search' src='/images/posts/2013-08-30-yesterboxmarklet/desired-search.png' />
+  <img alt='Desired search' src='/images/posts/2013-09-02-yesterboxmarklet/desired-search.png' />
   <div class='article-image-caption'>
     The search I wanted to perform with Gmail's advanced search
   </div>
 </div><div class='article-image'>
-  <img alt='Closest search' src='/images/posts/2013-08-30-yesterboxmarklet/closest-search.png' />
+  <img alt='Closest search' src='/images/posts/2013-09-02-yesterboxmarklet/closest-search.png' />
   <div class='article-image-caption'>
-    The closest, actual search I could perform using Gmail's advanced search interface which seems to actually be buggy
+    The closest, actual search I could perform using Gmail's advanced search
+    interface, which seems to actually be buggy
   </div>
 </div><p>
 I then performed a cursory search on the internet to find a solution native to
@@ -69,7 +70,7 @@ yesterday's emails only.
 </p>
 <p>Try clicking <a href='javascript:window.open(&apos;http://markscholtz.com/yesterboxmarklet.html&apos;);void(0)' title='Yesterboxmarklet'>Yesterboxmarklet</a> to test it out (you need to be logged in to Gmail for it to work). If you like the results and want to try out the Yesterbox approach for a while to see if it suits you, drag the bookmarklet link up to your browser&#8217;s bookmarks bar to save it permanently. Give it a click. If all goes well, voila! Yesterbox in Gmail!</p>
 
-<p><em>Disclaimer</em>: I&#8217;ve only tested this on the latest versions of Chrome, Safari and Firefox on OS X. It&#8217;s not perfect and has a few issues. For example, searches on the first day of the month work, but the &#8220;after&#8221; day in the date filter is 0. It also doesn&#8217;t work on Chrome&#8217;s new tab page, which is a result of security measures put in place by the Chrome team. Also, this bookmarklet went through many iterations and was more a pain to write than I thought. Currently it just opens a new window pointing to a page on this site that runs the below code. Any feedback on this approach or bug reports are most welcome.</p>
+<p><em>Disclaimer</em>: I&#8217;ve only tested this on the latest versions of Chrome, Safari and Firefox on OS X. It&#8217;s not perfect and has a few issues. For example, searches on the first day of the month work, but the &#8220;after&#8221; day in the date filter is 0, not 1. It also doesn&#8217;t work on Chrome&#8217;s new tab page, which is a result of security measures put in place by the Chrome team. Also, this bookmarklet went through many iterations and was more a pain to write than I thought. Currently it just opens a new window pointing to a page on this site that runs the below code. Any feedback on this approach or bug reports are most welcome.</p>
 <div class='code-header'>Yesterbox</div><div class='highlight'><pre><code class='javascript'><span class='lineno'> 1</span>   <span class='p'>(</span><span class='kd'>function</span> <span class='p'>()</span> <span class='p'>{</span>
 <span class='lineno'> 2</span>     <span class='kd'>var</span> <span class='nx'>now</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nb'>Date</span><span class='p'>();</span>
 <span class='lineno'> 3</span> 
