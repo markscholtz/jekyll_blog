@@ -1,4 +1,4 @@
-javascript: (function () {
+(function () {
   var now = new Date();
 
   var year = now.getFullYear();
@@ -8,12 +8,13 @@ javascript: (function () {
   var today = year + "/" + month + "/" + day;
   var yesterday = year + "/" + month + "/" + (day - 1)
 
-  var yesterbox = "https://mail.google.com/mail/u/0/?ui=2&shva=1#search/after";
+  var yesterbox = "https://mail.google.com/mail/u/0/?ui=2&shva=1#search/";
+  yesterbox += "+in";
+  yesterbox += encodeURIComponent(":inbox");
+  yesterbox += "+after";
   yesterbox += encodeURIComponent(":" + yesterday);
   yesterbox += "+before";
   yesterbox += encodeURIComponent(":" + today);
-  yesterbox += "+label"
-  yesterbox += encodeURIComponent(":inbox");
 
   window.location.href = yesterbox;
 })();

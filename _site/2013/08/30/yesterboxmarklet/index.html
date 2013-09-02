@@ -47,9 +47,9 @@
 
 <p>Now you have a finite list of emails to reply to each day :)</p>
 
-<p>It sounded intriguing so I thought I would give it a try. It quickly became apparent, however, that it would be difficult to emulate in Gmail (my email client of choice) as there is no convenient way to view yesterday&#8217;s emails without performing a custom advanced search each time you want to view your Yesterbox.</p>
+<p>This idea sounded intriguing to me, so I thought I would give it a try. It quickly became apparent, however, that it would be difficult to emulate in Gmail (my email client of choice) as there is no convenient way to view yesterday&#8217;s emails without performing a custom advanced search each time you want to view your Yesterbox.</p>
 
-<p>The closest I managed to get was to perform an advanced search, filtering by &#8220;Date within 1 day of yesterday&#8221;. Unfortunately this resulted in emails from the day before and after yesterday being included in the search results.</p>
+<p>The closest I managed to get was to perform an advanced search, filtering by &#8220;Date within 1 day of yesterday&#8221;. Unfortunately this resulted in emails from the day before and after yesterday being included in the search results. Not what I wanted.</p>
 <div class='article-image'>
   <img alt='Desired search' src='/images/posts/2013-08-30-yesterboxmarklet/desired-search.png' />
   <div class='article-image-caption'>
@@ -58,24 +58,20 @@
 </div><div class='article-image'>
   <img alt='Closest search' src='/images/posts/2013-08-30-yesterboxmarklet/closest-search.png' />
   <div class='article-image-caption'>
-    The closest, actual search I could perform using Gmail's advanced search interface
+    The closest, actual search I could perform using Gmail's advanced search interface which seems to actually be buggy
   </div>
-</div>
-<p>I performed a cursory search on the internet to find a solution native to Gmail, but without luck, so I tried the first approach to fixing the problem that came to mind: I wrote a <a href='javascript: (function () { var jsCode =
-document.createElement(&apos;script&apos;); jsCode.setAttribute(&apos;src&apos;,
-&apos;http://markscholtz.com/js/bookmarklets/yesterbox.js&apos;);
-document.body.appendChild(jsCode); }());' title='Yesterbox'> bookmarklet for
-Yesterbox </a> that filters your email so that you have a view of yesterday&#8217;s emails only.</p>
+</div><p>
+I then performed a cursory search on the internet to find a solution native to
+Gmail, but without luck. The first approach to fixing the problem that came to
+mind was writing a bookmarklet. So I did that. I like to call it
+<a href='javascript:window.open(&apos;http://markscholtz.com/yesterboxmarklet.html&apos;);void(0)' title='Yesterboxmarklet'>Yesterboxmarklet</a>,
+a bookmarklet that filters your email in Gmail so that you have a view of
+yesterday's emails only.
+</p>
+<p>Try clicking <a href='javascript:window.open(&apos;http://markscholtz.com/yesterboxmarklet.html&apos;);void(0)' title='Yesterboxmarklet'>Yesterboxmarklet</a> to test it out (you need to be logged in to Gmail for it to work). If you like the results and want to try out the Yesterbox approach for a while to see if it suits you, drag the bookmarklet link up to your browser&#8217;s bookmarks bar to save it permanently. Give it a click. If all goes well, voila! Yesterbox in Gmail!</p>
 
-<p>Try clicking <a href='javascript: (function () { var jsCode =
-document.createElement(&apos;script&apos;); jsCode.setAttribute(&apos;src&apos;,
-&apos;http://markscholtz/js/bookmarklets/yesterbox.js&apos;);
-document.body.appendChild(jsCode); }());' title='Yesterbox'>Yesterbox</a> to test it out (you need to be logged in to Gmail for it to work). If you like it the results and want to try out Yesterbox, drag the bookmarklet link up to your bookmarks bar to save it permanently. Give it a click. If all goes well, voila! Yesterbox in Gmail!</p>
-
-<p>Disclaimer: I&#8217;ve only tested this in the latest version of Chrome on OS X. It&#8217;s not perfect and has a few issues. For example it doesn&#8217;t seem to work from a new Chrome tab. Any feedback or bug reports welcome.</p>
-
-<p>And here is the code for those interested:</p>
-<div class='code-header'>Yesterbox</div><div class='highlight'><pre><code class='javascript'><span class='lineno'> 1</span>   <span class='nx'>javascript</span><span class='o'>:</span> <span class='p'>(</span><span class='kd'>function</span> <span class='p'>()</span> <span class='p'>{</span>
+<p><em>Disclaimer</em>: I&#8217;ve only tested this on the latest versions of Chrome, Safari and Firefox on OS X. It&#8217;s not perfect and has a few issues. For example, searches on the first day of the month work, but the &#8220;after&#8221; day in the date filter is 0. It also doesn&#8217;t work on Chrome&#8217;s new tab page, which is a result of security measures put in place by the Chrome team. Also, this bookmarklet went through many iterations and was more a pain to write than I thought. Currently it just opens a new window pointing to a page on this site that runs the below code. Any feedback on this approach or bug reports are most welcome.</p>
+<div class='code-header'>Yesterbox</div><div class='highlight'><pre><code class='javascript'><span class='lineno'> 1</span>   <span class='p'>(</span><span class='kd'>function</span> <span class='p'>()</span> <span class='p'>{</span>
 <span class='lineno'> 2</span>     <span class='kd'>var</span> <span class='nx'>now</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nb'>Date</span><span class='p'>();</span>
 <span class='lineno'> 3</span> 
 <span class='lineno'> 4</span>     <span class='kd'>var</span> <span class='nx'>year</span> <span class='o'>=</span> <span class='nx'>now</span><span class='p'>.</span><span class='nx'>getFullYear</span><span class='p'>();</span>
@@ -85,21 +81,16 @@ document.body.appendChild(jsCode); }());' title='Yesterbox'>Yesterbox</a> to tes
 <span class='lineno'> 8</span>     <span class='kd'>var</span> <span class='nx'>today</span> <span class='o'>=</span> <span class='nx'>year</span> <span class='o'>+</span> <span class='s2'>&quot;/&quot;</span> <span class='o'>+</span> <span class='nx'>month</span> <span class='o'>+</span> <span class='s2'>&quot;/&quot;</span> <span class='o'>+</span> <span class='nx'>day</span><span class='p'>;</span>
 <span class='lineno'> 9</span>     <span class='kd'>var</span> <span class='nx'>yesterday</span> <span class='o'>=</span> <span class='nx'>year</span> <span class='o'>+</span> <span class='s2'>&quot;/&quot;</span> <span class='o'>+</span> <span class='nx'>month</span> <span class='o'>+</span> <span class='s2'>&quot;/&quot;</span> <span class='o'>+</span> <span class='p'>(</span><span class='nx'>day</span> <span class='o'>-</span> <span class='mi'>1</span><span class='p'>)</span>
 <span class='lineno'>10</span> 
-<span class='lineno'>11</span>     <span class='kd'>var</span> <span class='nx'>yesterbox</span> <span class='o'>=</span> <span class='s2'>&quot;https://mail.google.com/mail/u/0/?ui=2&amp;shva=1#search/after&quot;</span><span class='p'>;</span>
-<span class='lineno'>12</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='nb'>encodeURIComponent</span><span class='p'>(</span><span class='s2'>&quot;:&quot;</span> <span class='o'>+</span> <span class='nx'>yesterday</span><span class='p'>);</span>
-<span class='lineno'>13</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='s2'>&quot;+before&quot;</span><span class='p'>;</span>
-<span class='lineno'>14</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='nb'>encodeURIComponent</span><span class='p'>(</span><span class='s2'>&quot;:&quot;</span> <span class='o'>+</span> <span class='nx'>today</span><span class='p'>);</span>
-<span class='lineno'>15</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='s2'>&quot;+label&quot;</span>
-<span class='lineno'>16</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='nb'>encodeURIComponent</span><span class='p'>(</span><span class='s2'>&quot;:inbox&quot;</span><span class='p'>);</span>
-<span class='lineno'>17</span> 
-<span class='lineno'>18</span>     <span class='nb'>window</span><span class='p'>.</span><span class='nx'>location</span><span class='p'>.</span><span class='nx'>href</span> <span class='o'>=</span> <span class='nx'>yesterbox</span><span class='p'>;</span>
-<span class='lineno'>19</span>   <span class='p'>})();</span>
-<span class='lineno'>20</span> 
-<span class='lineno'>21</span>   <span class='nx'>javascript</span><span class='o'>:</span> <span class='p'>(</span><span class='kd'>function</span> <span class='p'>()</span> <span class='p'>{</span>
-<span class='lineno'>22</span>     <span class='kd'>var</span> <span class='nx'>jsCode</span> <span class='o'>=</span> <span class='nb'>document</span><span class='p'>.</span><span class='nx'>createElement</span><span class='p'>(</span><span class='s1'>&#39;script&#39;</span><span class='p'>);</span>
-<span class='lineno'>23</span>     <span class='nx'>jsCode</span><span class='p'>.</span><span class='nx'>setAttribute</span><span class='p'>(</span><span class='s1'>&#39;src&#39;</span><span class='p'>,</span> <span class='s1'>&#39;http://markscholtz.com/&#39;</span><span class='p'>);</span>
-<span class='lineno'>24</span>     <span class='nb'>document</span><span class='p'>.</span><span class='nx'>body</span><span class='p'>.</span><span class='nx'>appendChild</span><span class='p'>(</span><span class='nx'>jsCode</span><span class='p'>);</span>
-<span class='lineno'>25</span>   <span class='p'>}());</span>
+<span class='lineno'>11</span>     <span class='kd'>var</span> <span class='nx'>yesterbox</span> <span class='o'>=</span> <span class='s2'>&quot;https://mail.google.com/mail/u/0/?ui=2&amp;shva=1#search/&quot;</span><span class='p'>;</span>
+<span class='lineno'>12</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='s2'>&quot;+in&quot;</span><span class='p'>;</span>
+<span class='lineno'>13</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='nb'>encodeURIComponent</span><span class='p'>(</span><span class='s2'>&quot;:inbox&quot;</span><span class='p'>);</span>
+<span class='lineno'>14</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='s2'>&quot;+after&quot;</span><span class='p'>;</span>
+<span class='lineno'>15</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='nb'>encodeURIComponent</span><span class='p'>(</span><span class='s2'>&quot;:&quot;</span> <span class='o'>+</span> <span class='nx'>yesterday</span><span class='p'>);</span>
+<span class='lineno'>16</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='s2'>&quot;+before&quot;</span><span class='p'>;</span>
+<span class='lineno'>17</span>     <span class='nx'>yesterbox</span> <span class='o'>+=</span> <span class='nb'>encodeURIComponent</span><span class='p'>(</span><span class='s2'>&quot;:&quot;</span> <span class='o'>+</span> <span class='nx'>today</span><span class='p'>);</span>
+<span class='lineno'>18</span> 
+<span class='lineno'>19</span>     <span class='nb'>window</span><span class='p'>.</span><span class='nx'>location</span><span class='p'>.</span><span class='nx'>href</span> <span class='o'>=</span> <span class='nx'>yesterbox</span><span class='p'>;</span>
+<span class='lineno'>20</span>   <span class='p'>})();</span>
 </code></pre></div>
     </div>
   </article>
@@ -178,22 +169,17 @@ document.body.appendChild(jsCode); }());' title='Yesterbox'>Yesterbox</a> to tes
     </footer>
   </body>
   <!-- JavaScript at the bottom for fast page loading -->
-
-  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>-->
-  <!--<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.6.1.min.js"%3E%3C/script%3E'))</script>-->
-
-
   <!-- Add Google Analytics -->
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-20783307-1']);
-    _gaq.push(['_trackPageview']);
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20783307-1']);
+  _gaq.push(['_trackPageview']);
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </html>
