@@ -1,19 +1,15 @@
 # Based on https://gist.github.com/960150
 
 module Jekyll
+  # Sass plugin to convert .scss to .css
+  #
+  # Note: This is configured to use the new css like syntax available in sass.
+  require 'sass'
   class SassConverter < Converter
     safe true
+    priority :low
 
-    def setup
-      return if @setup
-      require 'sass'
-      @setup = true
-    rescue
-      STDERR.puts 'do `gem install sass`'
-      raise FatalException.new("Missing dependency: sass")
-    end
-
-     def matches(ext)
+    def matches(ext)
       ext =~ /scss/i
     end
 
@@ -22,15 +18,17 @@ module Jekyll
     end
 
     def convert(content)
-      setup
       begin
         puts "Performing Sass Conversion."
-        engine = Sass::Engine.new(content, :syntax => :scss)
+        require "pry"
+        engine = Sass::Engine.new(content, :syntax => :scss, :load_paths => ["./css/"])
         engine.render
       rescue StandardError => e
-        puts "!!! Sass Error: " + e.message
+        # binding.pry
+        puts e.sass_backtrace
+        puts "!!! SASS Error: " + e.message
       end
     end
-
   end
 end
+
