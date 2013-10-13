@@ -32,20 +32,6 @@ header#site_header {
   }
 }
 
-footer#site_footer {
-  background-color: $dark_blue;
-  border-top: $main_border_height solid $light_green;
-  clear: both;
-  height: $footer_padding;
-  margin-top: -($footer_padding + $main_border_height);
-  position: relative;
-  text-align: center;
-  p {
-    color: $background_colour;
-    padding-top: 8px;
-  }
-}
-
 blockquote {
   border-left: solid 2px $blue_grey;
   color: $blue_grey;
@@ -63,7 +49,6 @@ div#main_site_content {
   margin: 0 auto;
   max-width: 960px;
   overflow: auto;
-  padding-bottom: $footer_padding;
 
   .primary_content {
     float: left;
@@ -102,15 +87,6 @@ div#main_site_content {
         font-size: 1.5em;
         padding-left: 5px;
         padding-top: 15px;
-      }
-    }
-
-    footer.article_footer {
-      font: bold;
-      padding-bottom: 20px;
-      text-align: right
-      h2 {
-        font-size: 1.5em;
       }
     }
   }
