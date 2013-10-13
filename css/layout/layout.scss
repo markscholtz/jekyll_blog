@@ -1,1 +1,56 @@
+@import "site-settings";
+
+#site_header {
+  background-color: $dark_blue;
+  border-top: $main_border_height solid $light_green;
+  height: 60px;
+  // padding: 20px 0;
+}
+
+#main_site_content {
+  margin: 0 auto;
+  max-width: 960px;
+  overflow: auto;
+}
+
+#primary_content {
+  float: left;
+  padding: 3%;
+  width: 57%;
+
+  header.article_header {
+    color: $dark_blue;
+    h1 {
+      font-size: 2em;
+      font: bold;
+    }
+    h2 {
+      font-weight: normal;
+      padding-bottom: 5px;
+    }
+    #post_date {
+      border-top: 3px solid $light_green;
+      color: $blue_grey;
+      padding: 5px 7px 0 0;
+      text-align: right;
+    }
+  }
+
+  article {
+    padding: 10px 0 20px 0;
+    text-align: left;
+    p {
+      font-size: 1.05em;
+    }
+    p.disclaimer {
+      font-size: 0.9em;
+      padding-top: 30px;
+    }
+    h2 {
+      font-size: 1.5em;
+      padding-left: 5px;
+      padding-top: 15px;
+    }
+  }
+}
 

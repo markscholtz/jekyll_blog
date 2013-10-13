@@ -1,0 +1,22 @@
+@import "site-settings";
+
+.title {
+  color: $background_colour;
+  font-size: 36px;
+  padding-left: 9%;
+
+  a {
+    color: $light_green;
+    text-decoration: none;
+    &:hover {
+      color:$hot_pink;
+    }
+  }
+  span {
+    color: $background_colour;
+  }
+  #scholtz_span {
+    padding-left: 2px;
+  }
+}
+
