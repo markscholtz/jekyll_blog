@@ -1,22 +1,4 @@
-/* Colours */
-$background_colour: #FDF6E3;
-$blue_grey: #657B83;
-$dark_blue: #073642;
-$hot_pink: rgb(255, 75, 110);
-$light_green: #00CCBB;
-$text_colour: #3D3D42;
-$white: #FEFEFF;
-
-/* Font Colours */
-$green: #8B9D36;
-$orange: #BE5222;
-$blue: #3481C9;
-$red: #B12427;
-$purple: #676AC0;
-
-/* Padding and Borders */
-$footer_padding: 100px;
-$main_border_height: 3px;
+@import "site-settings.scss";
 
 @mixin selection {
   background:$hot_pink;
