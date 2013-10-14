@@ -1,14 +1,25 @@
 ---
 ---
-@import "default";
+@import "reset";
+@import "base";
+
 @import "layout/layout";
-@import "module/article-disclaimer";
+
+@import "module/title";
+
 @import "module/article-header";
 @import "module/article-subheader";
 @import "module/article-metadata";
+
 @import "module/article-paragraph";
-@import "module/title";
+
+@import "module/article-image";
+@import "module/article-image-caption";
+
+@import "module/article-disclaimer";
+
 @import "module/quote";
+
 @import "mixins";
 @import "states";
 
