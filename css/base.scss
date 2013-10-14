@@ -1,10 +1,5 @@
-@import "site-settings.scss";
-
-@mixin selection {
-  background:$hot_pink;
-  color: $white;
-  text-shadow: none;
-}
+@import "site-settings";
+@import "mixins";
 
 html, body {
   background: $background_colour;
