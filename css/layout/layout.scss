@@ -4,7 +4,6 @@
   background-color: $dark_blue;
   border-top: $main_border_height solid $light_green;
   height: 60px;
-  // padding: 20px 0;
 }
 
 #main_site_content {
@@ -17,10 +16,10 @@
   float: left;
   padding: 3%;
   width: 57%;
+}
 
-  article {
-    padding: 10px 0 20px 0;
-    text-align: left;
-  }
+#article {
+  padding: 10px 0 20px 0;
+  text-align: left;
 }
 
