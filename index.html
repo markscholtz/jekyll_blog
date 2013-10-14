@@ -7,10 +7,10 @@ title: www.markscholtz.com
     <a class="article_header_link" href="{{ post.url }}">
       <h1>{{ post.title }}</h1>
       {% if post.subtitle %}
-        <h2>{{ post.subtitle }}</h2>
+        <h2 class="article-subheader">{{ post.subtitle }}</h2>
       {% endif %}
     </a>
-    <div id="post_date">{{ post.date | date : "%A %d %B %Y" }}</div>
+    <div class="article-metadata">{{ post.date | date : "%A %d %B %Y" }}</div>
   </header>
   <article>
     {{ post.content }}

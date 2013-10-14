@@ -59,7 +59,7 @@ the results and want to try out the Yesterbox approach for a while to see if it
 suits you, drag the bookmarklet link up to your browser's bookmarks bar to save
 it permanently. Give it a click. If all goes well, voila!  Yesterbox in Gmail!
 
-<p class="disclaimer">
+<p class="article-disclaimer">
   <em>Disclaimer</em>: I've only tested this on the latest versions of Chrome, Safari
   and Firefox on OS X. It's not perfect and has a few issues. For example,
   searches on the first day of the month work, but the "after" day in the date
