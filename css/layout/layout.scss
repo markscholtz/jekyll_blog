@@ -1,5 +1,17 @@
 @import "site-settings";
 
+/* html5 styling */
+header, nav, section, aside, footer, article {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+/* Always force a scrollbar in non-IE */
+html {
+  overflow-y: scroll;
+}
+
 #wrap {
   min-height: 100%;
   width: 100%;

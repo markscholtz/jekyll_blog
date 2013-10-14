@@ -6,16 +6,6 @@
   text-shadow: none;
 }
 
-/* html5 styling */
-header, nav, section, aside, footer, article {
-  clear: both;
-  display: block;
-  width: 100%;
-}
-
-/* Always force a scrollbar in non-IE */
-html { overflow-y: scroll; }
-
 html, body {
   background: $background_colour;
   color: $text_colour;
