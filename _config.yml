@@ -8,3 +8,4 @@ exclude: [
 permalink: /:year/:month/:day/:title
 pygments: true
 timezone: "Africa/Johannesburg"
+

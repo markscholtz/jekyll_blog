@@ -11,100 +11,99 @@ em {
   font-weight: bold;
 }
 
-// div#main_site_content {
-  .article-image {
-    padding: 15px 0px;
-  }
+.article-image {
+  padding: 15px 0px;
+}
 
-  .article-image img {
-    padding-bottom: 7px;
-  }
+.article-image img {
+  padding-bottom: 7px;
+}
 
-  .article-image-caption {
-    font-size: 0.9em;
-    color: #657b83;
-    padding-left: 2px;
-    margin-top: -5px;
-  }
+.article-image-caption {
+  font-size: 0.9em;
+  color: #657b83;
+  padding-left: 2px;
+  margin-top: -5px;
+}
 
-  .secondary_content {
-    float: right;
-    padding: 3%;
-    width: 27%;
-    div {
-      padding-bottom: 25px;
-    }
-    a {
-      border-bottom: none;
-      font-weight: normal;
-    }
-    p, li, a {
-      font-size: 0.9em;
-    }
-    h2 {
-      background-color: $hot_pink;
-      color: $white;
-      font-size: 1.2em;
-      font-weight: bold;
-      margin: 10px 0;
-      padding: 0 0 0 10px;
-    }
-    .colophon {
-      padding-top: 2px;
-    }
-    .rss {
-      a {
-        &:hover .icon-rss {
-          color: $orange;
-        }
-      }
-      ul {
-        padding-top: 10px;
-      }
-    }
-    .social {
-      a {
-        &:hover .icon-envelope {
-          color: $light_green;
-        }
-        &:hover .icon-twitter {
-          color: $blue;
-        }
-        &:hover .icon-facebook {
-          color: $red;
-        }
-        &:hover .icon-google-plus {
-          color: $green;
-        }
-        &:hover .icon-linkedin {
-          color: $hot_pink;
-        }
-        &:hover .icon-github {
-          color: $purple;
-        }
-      }
-      ul {
-        padding: 10px 0;
-      }
-      li {
-        padding: 4px 0;
-        a {
-          line-height: 26px;
-          i {
-            padding-top: 4px;
-          }
-        }
-      }
-    }
+  // .secondary_content {
+  //   float: right;
+  //   padding: 3%;
+  //   width: 27%;
+  //   div {
+  //     padding-bottom: 25px;
+  //   }
+  //   a {
+  //     border-bottom: none;
+  //     font-weight: normal;
+  //   }
+  //   p, li, a {
+  //     font-size: 0.9em;
+  //   }
+  //   h2 {
+  //     background-color: $hot_pink;
+  //     color: $white;
+  //     font-size: 1.2em;
+  //     font-weight: bold;
+  //     margin: 10px 0;
+  //     padding: 0 0 0 10px;
+  //   }
+  //   .colophon {
+  //     padding-top: 2px;
+  //   }
+  //   .rss {
+  //     a {
+  //       &:hover .icon-rss {
+  //         color: $orange;
+  //       }
+  //     }
+  //     ul {
+  //       padding-top: 10px;
+  //     }
+  //   }
+  //   .social {
+  //     a {
+  //       &:hover .icon-envelope {
+  //         color: $light_green;
+  //       }
+  //       &:hover .icon-twitter {
+  //         color: $blue;
+  //       }
+  //       &:hover .icon-facebook {
+  //         color: $red;
+  //       }
+  //       &:hover .icon-google-plus {
+  //         color: $green;
+  //       }
+  //       &:hover .icon-linkedin {
+  //         color: $hot_pink;
+  //       }
+  //       &:hover .icon-github {
+  //         color: $purple;
+  //       }
+  //     }
+  //     ul {
+  //       padding: 10px 0;
+  //     }
+  //     li {
+  //       padding: 4px 0;
+  //       a {
+  //         line-height: 26px;
+  //         i {
+  //           padding-top: 4px;
+  //         }
+  //       }
+  //     }
+  //   }
 
-    .button {
-      background-image: url(../images/social/social_icons.png);
-      background-repeat: no-repeat;
-      width: 32px;
-      height: 26px;
-      display: block;
-      text-indent: 40px;
-      padding-top: 6px;
-    }
-  }
+  //   .button {
+  //     background-image: url(../images/social/social_icons.png);
+  //     background-repeat: no-repeat;
+  //     width: 32px;
+  //     height: 26px;
+  //     display: block;
+  //     text-indent: 40px;
+  //     padding-top: 6px;
+  //   }
+  // }
 // }
